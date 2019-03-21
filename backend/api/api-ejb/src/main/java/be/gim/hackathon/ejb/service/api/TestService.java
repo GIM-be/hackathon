@@ -1,4 +1,6 @@
-package be.gim.hackathon.ejb.api;
+package be.gim.hackathon.ejb.service.api;
+
+import be.gim.hackathon.ejb.model.Test;
 
 import javax.ejb.Local;
 
@@ -8,5 +10,5 @@ import javax.ejb.Local;
  */
 @Local
 public interface TestService {
-  String hello();
+  Test hello();
 }

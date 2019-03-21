@@ -1,6 +1,7 @@
 package be.gim.hackathon.web;
 
-import be.gim.hackathon.ejb.api.TestService;
+import be.gim.hackathon.ejb.model.Test;
+import be.gim.hackathon.ejb.service.api.TestService;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
@@ -22,7 +23,7 @@ public class TestEndPoint {
 
   @GET
   @Produces(MediaType.APPLICATION_JSON)
-  public String test() {
+  public Test test() {
     return testService.hello();
   }
 }
