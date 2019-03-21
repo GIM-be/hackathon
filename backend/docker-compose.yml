@@ -2,7 +2,7 @@ version: '3'
 services:
   api:
 #    image: mohamnag/wildfly-postgres
-    build: .
+    build: ./api/
     ports:
     - "8080:8080"
     environment:

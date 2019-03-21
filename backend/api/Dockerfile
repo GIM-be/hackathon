@@ -11,8 +11,8 @@ ENV JNDI_NAME java:jboss/jdbc/myNewDs
 
 
 ADD https://jdbc.postgresql.org/download/postgresql-42.1.4.jar /tmp/postgresql.jar
-ADD wildfly-static-config.cli /tmp/wildfly-static-config.cli
-ADD start.sh /scripts/
+ADD docker/wildfly-static-config.cli /tmp/wildfly-static-config.cli
+ADD docker/start.sh /scripts/
 ADD https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh /scripts/wait-for-it.sh
 
 USER root
