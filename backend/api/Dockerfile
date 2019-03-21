@@ -30,6 +30,6 @@ RUN ${JBOSS_HOME}/bin/jboss-cli.sh --file=/tmp/wildfly-static-config.cli && \
 # add default admin user
 RUN ${JBOSS_HOME}/bin/add-user.sh admin Admin#70365 --silent
 
-
+ADD api-app/target/hackathon_app.ear /opt/jboss/wildfly/standalone/deployments/
 USER jboss
 CMD [ "/scripts/start.sh" ]

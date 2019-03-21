@@ -3,13 +3,13 @@
   xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
 
-  <display-name>magsa</display-name>
+  <display-name>hackathon</display-name>
   <servlet>
     <servlet-name>WebServices</servlet-name>
     <servlet-class>javax.ws.rs.core.Application</servlet-class>
     <init-param>
       <param-name>javax.ws.rs.Application</param-name>
-      <param-value>lu.etat.ma.gsa.ws.rest.AppConfig</param-value>
+      <param-value>be.gim.hackathon.web.AppConfig</param-value>
     </init-param>
     <load-on-startup>1</load-on-startup>
   </servlet>
