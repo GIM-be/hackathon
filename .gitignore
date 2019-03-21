@@ -60,3 +60,20 @@ typings/
 
 # next.js build output
 .next
+
+
+/target/
+*.iml
+.idea/*
+/.settings/
+.tern-project
+.classpath
+.project
+tmp/
+*/target/*
+geoserver/overlays/*
+.settings
+.metadata
+.recommenders
+.sonarlint
+package-lock.json

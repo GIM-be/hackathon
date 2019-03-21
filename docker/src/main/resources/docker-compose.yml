@@ -1,0 +1,21 @@
+version: '3'
+services:
+  api:
+#    image: mohamnag/wildfly-postgres
+    build: .
+    ports:
+    - "8080:8080"
+    environment:
+    - DB_NAME=myapp
+    - DB_PASS=my-password
+    - DB_USER=myapp
+    - DB_HOST=db
+    - DS_NAME=appDS
+    - JNDI_NAME=java:jboss/jdbc/appDS
+    depends_on:
+    - db
+  db:
+    image: mdillon/postgis:11
+    environment:
+    - POSTGRES_USER=myapp
+    - POSTGRES_PASSWORD=my-password
