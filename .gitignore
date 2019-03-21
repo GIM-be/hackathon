@@ -62,7 +62,7 @@ typings/
 .next
 
 
-/target/
+target/
 *.iml
 .idea/*
 /.settings/
