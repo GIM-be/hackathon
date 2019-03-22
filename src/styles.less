@@ -1,8 +1,106 @@
-/* You can add global styles to this file, and also import other style files */
+/* CONSTANTS */
+@theme-color: #27b2d0;
+@theme-color-dark: #21527d;
+@theme-color-light: #fff;
+
+@secondary-grey-dark: #384144;
+@secondary-grey-normal: #546166;
+@secondary-grey-light: #d4dadc;
+
+@tertiary-green: #4ba144;
+@tertiary-red: #f02e29;
+@tertiary-orange: #ff820d;
+@tertiary-yellow: #ffc912;
+@tertiary-blue: #0e83e6;
+
+@screen-xs: ~"screen and (max-width: 512px)";
+@screen-s: ~"screen and (max-width: 768px)";
+@screen-m: ~"screen and (max-width: 1144px)";
+
 html, body {
-    height: 100%;
-    margin: 0;
+  height: 100%;
+  margin: 0;
 }
-.pointer{
+
+app-root {
+  // Disables pull-to-refresh and overscroll glow effect on chrome mobile version.
+  overscroll-behavior-y: none;
+
+  .calc(@prop, @val) {
+      @{prop}: ~"-moz-calc(@{val})";
+      @{prop}: ~"-webkit-calc(@{val})";
+      @{prop}: ~"calc(@{val})";
+  }
+  .transition(@val) {
+    -webkit-transition: @val;
+    -moz-transition: @val;
+    -ms-transition: @val;
+    -o-transition: @val;
+    transition: @val;
+  }
+  .translate(@x, @y) {
+    -webkit-transform: translate(@x, @y);
+    -moz-transform: translate(@x, @y);
+    -ms-transform: translate(@x, @y);
+    -o-transform: translate(@x, @y);
+    transform: translate(@x, @y);
+  }
+  .scale(@val) {
+    -webkit-transform: scale(@val);
+    -moz-transform: scale(@val);
+    -ms-transform: scale(@val);
+    -o-transform: scale(@val);
+    transform: scale(@val);
+  }
+  .blurred(@val) {
+    -webkit-filter: blur(@val);
+    -moz-filter: blur(@val);
+    -o-filter: blur(@val);
+    -ms-filter: blur(@val);
+    filter: blur(@val);
+  }
+  .noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .text-overflow-ellipsiss {
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .thin-scrollable {
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      background-color: @theme-color-light;
+    }
+    &::-webkit-scrollbar {
+      width: 6px;
+      background-color: @theme-color-light;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: @theme-color-dark;
+    }
+  }
+
+  .pointer{
     cursor: pointer;
+  }
+  .no-padding {
+    padding: 0 !important;
+  }
+  .no-margin {
+    margin: 0 !important;
+  }
+  .transition-default {
+    .transition(all 300ms ease 0s);
+  }
+  .transition-fast {
+    .transition(all 100ms ease 0s);
+  }
 }
