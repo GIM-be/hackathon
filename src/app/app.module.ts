@@ -14,6 +14,7 @@ import { SelectNotifZoneComponent } from './map/right-panel/select-notif-zone/se
 import { ProposalModalComponent } from './proposal-modal/proposal-modal.component';
 import { ToolbarComponent } from './map/toolbar/toolbar.component';
 import { LoginComponent } from './map/left-panel/login/login.component';
+import { RouterModule, Routes } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { LoginComponent } from './map/left-panel/login/login.component';
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    NgbModule
+    NgbModule,
+    RouterModule.forRoot([]),
   ],
   providers: [],
   bootstrap: [AppComponent]

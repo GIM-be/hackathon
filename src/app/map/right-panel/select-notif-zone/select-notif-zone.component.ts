@@ -6,7 +6,7 @@ import {Vector as VectorSource} from 'ol/source';
 import {Vector as VectorLayer} from 'ol/layer';
 import GeoJSON from 'ol/format/GeoJSON.js';
 import WKT from 'ol/format/WKT';
-import {HttpClient, HttpHeaders} from '@angular/common/http';
+import {HttpClient} from '@angular/common/http';
 import {UserService} from "../../../services/user.service";
 
 @Component({

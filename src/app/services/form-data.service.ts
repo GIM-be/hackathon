@@ -34,17 +34,25 @@ export class FormDataService {
     propositionJson.description = proposition.description;
 
     const options = {headers: {'Content-Type': 'application/json'}};
-    return this.http.post('http://localhost:8080/hackathon/proposal/create', propositionJson, options).subscribe((response: any) => {
-      console.log('success');
-      let newPropo;
-      newPropo = new Proposition(response.id, new Feature({geometry: geoJsonFormatter.readGeometry(response.geometry), techId: response.id}), response.name, response.description);
-      this.layerService.layers.proposals.olLayer.getSource().removeFeature(this.formDataToTreat.feature);
-      this.layerService.layers.proposals.olLayer.getSource().addFeature(newPropo.feature);
-      this.dataService.proposals.push(newPropo);
-      this.formDataToTreat.removeData();
-    }, error => {
-      console.log('error');
-    });
+    return this.http.post('http://localhost:8080/hackathon/proposal/isRelevant', propositionJson, options).subscribe(
+      (response: any) => {
+        console.log(response);
+        return this.http.post('http://localhost:8080/hackathon/proposal/create', propositionJson, options).subscribe((response: any) => {
+          console.log('success');
+          let newPropo;
+          newPropo = new Proposition(response.id, new Feature({geometry: geoJsonFormatter.readGeometry(response.geometry), techId: response.id}), response.name, response.description);
+          this.layerService.layers.proposals.olLayer.getSource().removeFeature(this.formDataToTreat.feature);
+          this.layerService.layers.proposals.olLayer.getSource().addFeature(newPropo.feature);
+          this.dataService.proposals.push(newPropo);
+          this.formDataToTreat.removeData();
+        }, error => {
+          console.log('error');
+        });
+      }, (error => {
+        console.log('error');
+      })
+    );
+
   }
 
   getFormDataToTreat() {
