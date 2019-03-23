@@ -23,7 +23,7 @@ export class DataService {
     return this.http.get<any>('http://localhost:8080/hackathon/proposal/all').pipe(
       tap(response => {
         response.forEach(proposal => {
-          this.proposals.push(new Proposition(this.wktParser.readGeometry(proposal.geometry)));
+          this.proposals.push(new Proposition(proposal.id, this.wktParser.readGeometry(proposal.geometry), proposal.name, proposal.description));
         });
       })
     );
