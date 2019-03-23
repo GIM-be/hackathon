@@ -40,6 +40,7 @@ public class AppConfig extends javax.ws.rs.core.Application {
 
     classes.add(TestEndPoint.class);
     classes.add(ProposalEndPoint.class);
+    classes.add(UserEndPoint.class);
     return classes;
   }
 
