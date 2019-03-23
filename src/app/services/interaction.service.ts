@@ -1,15 +1,10 @@
-import {Component, Injectable} from '@angular/core';
-import {MapService} from './map.service';
+import {Injectable, ViewChild} from '@angular/core';
 import Map from 'ol/Map';
 import Draw from 'ol/interaction/Draw.js';
 import {LayerService} from './layer.service';
 import * as _ from 'lodash';
-import {olx} from 'openlayers';
-import interaction = olx.interaction;
 import Select from 'ol/interaction/Select.js';
 import {click, shiftKeyOnly, pointerMove, altKeyOnly, singleClick} from '../../../node_modules/ol/events/condition.js';
-import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { ViewChild } from '@angular/core';
 import {DataService} from './data.service';
 import {Proposition} from '../classes/proposition';
 import {Vector as VectorLayer} from 'ol/layer';

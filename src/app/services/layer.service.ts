@@ -82,6 +82,7 @@ export class LayerService {
     const piccWms = this.createWMSLayer(picLayer);
     piccWms.set('name', picLayer.name);
     piccWms.set('showInLayerManager', true);
+    piccWms.setVisible(false);
     picLayer.olLayer = piccWms;
     this.layers['Fond de plan PICC'] = picLayer;
     return piccWms;

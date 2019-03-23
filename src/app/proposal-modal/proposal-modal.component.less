@@ -1,13 +1,57 @@
-/* The Modal (background) */
-.custom-modal {
-  padding-top: 5%;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+@import '../../css/constants';
+@import '../../css/xbrowser';
+
+.modal-backdrop {
+  position: fixed;
+  z-index: 999;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.4);
+
+  .modal-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    top: 50%;
+    .translate(0, -50%);
+    background-color: @theme-color-light;
+    color: @secondary-grey-dark;
+
+    .modal-closer {
+      position: absolute;
+      padding: 10px 15px;
+      cursor: pointer;
+      z-index: 1;
+      right: 0;
+      top: 0;
+
+      &:hover {
+        color: black;
+      }
+    }
+
+    .modal-data {
+      h3, p {
+        color: @secondary-grey-dark;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      }
+    }
+
+    .modal-action {
+      padding: 10px 0;
+      background-color: @secondary-grey-light;
+      border-top: solid 1px @secondary-grey-normal;
+
+      .btn-outline-light {
+        border: solid 2px @theme-color-dark;
+        i {
+          color: @theme-color-dark;
+          font-size: 15px;
+        }
+      }
+    }
+  }
 }
