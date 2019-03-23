@@ -7,4 +7,4 @@ set -e
 
 # TODO do we need to copy deployments after DS setup?
 
-${JBOSS_HOME}/bin/standalone.sh -b 0.0.0.0 -bmanagement 0.0.0.0
+${JBOSS_HOME}/bin/standalone.sh -b 0.0.0.0 -bmanagement 0.0.0.0 --debug "*:8787"

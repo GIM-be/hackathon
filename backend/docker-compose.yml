@@ -5,6 +5,8 @@ services:
     build: ./api/
     ports:
     - "8080:8080"
+    - "9990:9990"
+    - "8787:8787"
     environment:
     - DB_NAME=myapp
     - DB_PASS=my-password
