@@ -19,7 +19,7 @@ export class CreatePointButtonComponent implements OnInit {
     this.interaction = this.interactionService.createAddPointInteraction('drawPoint');
     this.interaction.on('drawend', e => {
       this.formDataService.setFormDataToTreat(
-        new Proposition(e.feature.getGeometry(), 'Point', 'A point on the map')
+        new Proposition(e.feature.getGeometry(), '', '')
       );
     });
   }
