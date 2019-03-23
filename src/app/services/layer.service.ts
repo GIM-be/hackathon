@@ -11,7 +11,7 @@ import {Style} from 'ol/style.js';
 import Stroke from 'ol/style/Stroke';
 import GeoJSON from 'ol/format/GeoJSON';
 import {bbox as bboxStrategy} from 'ol/loadingstrategy.js';
-import {DataService} from "./data.service";
+import {DataService} from './data.service';
 import Feature from 'ol/Feature.js';
 
 @Injectable({
@@ -62,7 +62,10 @@ export class LayerService {
   loadProposals() {
     this.dataService.loadProposals().subscribe(response => {
       this.dataService.proposals.forEach(proposal => {
-        this.layers.proposals.olLayer.getSource().addFeature(new Feature({geometry: proposal.geometry}));
+
+        const feature = new Feature({geometry: proposal.geometry});
+        feature.set('techId', proposal.id);
+        this.layers.proposals.olLayer.getSource().addFeature(feature);
       });
     });
   }

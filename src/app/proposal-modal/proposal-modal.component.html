@@ -1,0 +1,24 @@
+<div id="myModal" class="custom-modal"  *ngIf="showProposalModal()" >
+
+  <!-- Modal content -->
+  <div class="container bg-light text-dark">
+    <a class="float-right" (click)="deselectProposal()"><i class="fa fa-2x fa-times" ></i></a>
+    <div class="row">
+      <div class=" p-5 mx-auto col-md-12 col-12" >
+        <h3 class="display-3 text-dark">{{proposal.name}}</h3>
+        <h4 class="mb-3 lead text-dark">Description: </h4>
+        <p class="mb-4 text-dark">{{proposal.description}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2"><a class="btn btn-outline-light text-dark" href="#" contenteditable="true">
+        <i class="fa fa-thumbs-up fa-fw fa-1x py-1" ></i>
+      </a></div>
+      <div class="col-2"><a class="btn btn-outline-light text-dark" href="#" contenteditable="true">
+        <i class="fa fa-thumbs-down fa-fw fa-1x py-1" ></i>
+      </a></div>
+    </div>
+  </div>
+
+
+</div>
