@@ -1,5 +1,6 @@
 package be.gim.hackathon.ejb.service.api;
 
+import be.gim.hackathon.ejb.model.NotificationZone;
 import be.gim.hackathon.ejb.model.User;
 
 import java.util.Optional;
@@ -13,4 +14,6 @@ public interface UserService {
   Optional<User> findById(Integer id);
 
   User createUser(User user);
+
+  Optional<User> addNotificationZone(Integer id, NotificationZone notificationZone);
 }

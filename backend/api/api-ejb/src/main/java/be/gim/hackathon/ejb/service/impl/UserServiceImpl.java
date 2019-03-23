@@ -31,4 +31,15 @@ public class UserServiceImpl implements be.gim.hackathon.ejb.service.api.UserSer
     user.addNotificationZone(notificationZone);
     return userDao.insertOrUpdate(user);
   }
+
+  @Override
+  public Optional<User> addNotificationZone(Integer id, NotificationZone notificationZone) {
+    Optional<User> userOpt = userDao.findById(id);
+    if (userOpt.isPresent()) {
+      User user = userOpt.get();
+      user.addNotificationZone(notificationZone);
+      return Optional.ofNullable(userDao.insertOrUpdate(user));
+    }
+    return Optional.empty();
+  }
 }
