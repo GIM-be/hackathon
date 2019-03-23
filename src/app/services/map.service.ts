@@ -112,4 +112,8 @@ export class MapService {
       })
     );
   }
+
+  showProposalModal(){
+    return this.interactionService.showProposalModal();
+  }
 }

@@ -1,0 +1,13 @@
+<div class="login-form">
+  <div *ngIf="!userService.getLogged()">
+    <form>
+      <input placeholder="Email ..." [(ngModel)]="input" name="email" />
+      <button type="submit" (click)="login()">Se connecter</button>
+    </form>
+
+    <p class="login-error" *ngIf="userService.getError()">{{userService.getError()}}</p>
+  </div>
+  <div *ngIf="userService.getLogged()">
+    <button (click)="userService.logout()">Logout</button>
+  </div>
+</div>
