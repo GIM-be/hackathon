@@ -15,7 +15,6 @@ export class LeftPanelComponent implements OnInit {
     FORM: 2
   };
 
-  formDataToTreat: Proposition = new Proposition(null, null, null, null);
   openedTab = null;
 
   constructor(private formDataService: FormDataService, private loginService: LoginService) { }
@@ -24,7 +23,6 @@ export class LeftPanelComponent implements OnInit {
 
   isLeftPanelOpen() {
     if (this.formDataService.getFormDataToTreat().feature !== null) {
-      this.formDataToTreat = this.formDataService.getFormDataToTreat();
       this.openedTab = this.TABS.FORM;
       return true;
     }
