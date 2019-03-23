@@ -19,5 +19,6 @@ public interface ProposalDao {
 
   List<Proposal> findAll();
 
-  boolean isInRelevantArea(Proposal proposal);
+  boolean isBicycleParkingInRelevantArea(Proposal proposal);
+
 }

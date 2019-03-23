@@ -55,7 +55,7 @@ public class ProposalServiceImpl implements ProposalService {
   @Override
   public boolean isInRelevantArea(Proposal proposal) {
     if (ProposalType.BICYCLE_PARKING.equals(proposal.getType())) {
-      return proposalDao.isInRelevantArea(proposal);
+      return proposalDao.isBicycleParkingInRelevantArea(proposal);
     }
     return true;
   }

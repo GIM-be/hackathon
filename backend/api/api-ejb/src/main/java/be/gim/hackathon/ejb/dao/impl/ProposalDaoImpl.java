@@ -8,6 +8,7 @@ import org.hibernate.Session;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import java.math.BigInteger;
 import java.util.List;
 import java.util.Optional;
 
@@ -42,10 +43,11 @@ public class ProposalDaoImpl implements ProposalDao {
   }
 
   @Override
-  public boolean isInRelevantArea(Proposal proposal) {
-    return getSession().createNativeQuery("select count(*) from isochrone i where st_contains(i.geom, ST_GEOMFROMTEXT(:parcelGeom, 3857))")
+  public boolean isBicycleParkingInRelevantArea(Proposal proposal) {
+    return getSession().createNativeQuery("select count(i._distance) from isochrone i where st_contains(i.geom, ST_GEOMFROMTEXT(:parcelGeom, 3857))")
       .setParameter("parcelGeom", GeometryUtils.WKT_WRITER.write(proposal.getGeometry()))
-      .getFirstResult() > 1;
+      .getSingleResult()
+      .equals(BigInteger.ZERO);
   }
 
   private Session getSession() {
