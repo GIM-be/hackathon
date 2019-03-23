@@ -7,6 +7,7 @@ import {Vector as VectorLayer} from 'ol/layer';
 import GeoJSON from 'ol/format/GeoJSON.js';
 import WKT from 'ol/format/WKT';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
+import {UserService} from "../../../services/user.service";
 
 @Component({
   selector: 'app-select-notif-zone',
@@ -19,7 +20,7 @@ export class SelectNotifZoneComponent implements OnInit {
   vectorLayers: VectorLayer;
   isSelecting: boolean;
 
-  constructor(private interactionService: InteractionService, private mapService: MapService, private http: HttpClient) {}
+  constructor(private interactionService: InteractionService, private mapService: MapService, private http: HttpClient, private userService: UserService) {}
 
   ngOnInit() {
     this.selectorName = "notifZoneSelector";
