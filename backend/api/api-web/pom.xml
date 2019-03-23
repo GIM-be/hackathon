@@ -12,6 +12,10 @@
   <artifactId>api-web</artifactId>
   <packaging>war</packaging>
 
+  <properties>
+    <cors.filter.version>2.1</cors.filter.version>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>javax</groupId>
@@ -47,6 +51,13 @@
       <artifactId>jackson-databind</artifactId>
       <scope>provided</scope>
     </dependency>
+
+    <dependency>
+      <groupId>com.thetransactioncompany</groupId>
+      <artifactId>cors-filter</artifactId>
+      <version>${cors.filter.version}</version>
+    </dependency>
+
   </dependencies>
 
 
