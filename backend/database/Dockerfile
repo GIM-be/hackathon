@@ -1,3 +1,3 @@
 FROM mdillon/postgis:11
 
-COPY init.sql /docker-entrypoint-initdb.d/
+COPY z_init.sql /docker-entrypoint-initdb.d/
