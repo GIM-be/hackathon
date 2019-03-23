@@ -51,7 +51,11 @@ export class InteractionService {
     this.showProposalModalValue.value = false;
   }
 
-  showProposalModal() {
+  showProposalModal(proposal?: Proposition) {
+    if(proposal) {
+      this.showProposalModalValue.value = true;
+      this.selectedProposal = proposal;
+    }
     return this.showProposalModalValue;
   }
 
