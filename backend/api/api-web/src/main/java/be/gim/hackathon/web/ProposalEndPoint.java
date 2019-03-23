@@ -61,6 +61,14 @@ public class ProposalEndPoint {
     return proposalService.vote(proposalId, false);
   }
 
+  @POST
+  @Path("isRelevant")
+  @Produces(MediaType.APPLICATION_JSON)
+  @Consumes(MediaType.APPLICATION_JSON)
+  public boolean isRelevant(Proposal proposal) {
+    return proposalService.isInRelevantArea(proposal);
+  }
+
   @GET
   @Path("all")
   @Produces(MediaType.APPLICATION_JSON)

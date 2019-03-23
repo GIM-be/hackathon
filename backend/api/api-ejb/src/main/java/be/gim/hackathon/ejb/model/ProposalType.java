@@ -8,7 +8,9 @@ public enum ProposalType {
   BENCH("Banc"),
   BUS_STATION("Arrêt de bus"),
   TRASH_BIN("Poubelle"),
-  CROSSWALK("Passage piétons");
+  CROSSWALK("Passage piétons"),
+  BICYCLE_PARKING("Parking vélo")
+  ;
 
   private String label;
 

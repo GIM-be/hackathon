@@ -2,6 +2,7 @@ package be.gim.hackathon.ejb.service.impl;
 
 import be.gim.hackathon.ejb.dao.api.ProposalDao;
 import be.gim.hackathon.ejb.model.Proposal;
+import be.gim.hackathon.ejb.model.ProposalType;
 import be.gim.hackathon.ejb.service.api.ProposalService;
 
 import javax.ejb.EJB;
@@ -49,6 +50,14 @@ public class ProposalServiceImpl implements ProposalService {
     } else {
       throw new RuntimeException(String.format("Could not find proposal with id %s", proposalId));
     }
+  }
+
+  @Override
+  public boolean isInRelevantArea(Proposal proposal) {
+    if (ProposalType.BICYCLE_PARKING.equals(proposal.getType())) {
+      return proposalDao.isInRelevantArea(proposal);
+    }
+    return true;
   }
 
 }

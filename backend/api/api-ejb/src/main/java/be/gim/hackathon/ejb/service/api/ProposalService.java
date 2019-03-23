@@ -19,4 +19,6 @@ public interface ProposalService {
   List<Proposal> findAllProposals();
 
   Proposal vote(Integer proposalId, boolean vote);
+
+  boolean isInRelevantArea(Proposal proposal);
 }

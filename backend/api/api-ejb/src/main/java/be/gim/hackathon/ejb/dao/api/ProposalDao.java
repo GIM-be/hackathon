@@ -18,4 +18,6 @@ public interface ProposalDao {
   Proposal insertOrUpdate(Proposal toInsert);
 
   List<Proposal> findAll();
+
+  boolean isInRelevantArea(Proposal proposal);
 }

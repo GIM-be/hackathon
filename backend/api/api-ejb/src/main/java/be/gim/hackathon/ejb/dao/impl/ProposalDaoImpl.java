@@ -2,6 +2,8 @@ package be.gim.hackathon.ejb.dao.impl;
 
 import be.gim.hackathon.ejb.dao.api.ProposalDao;
 import be.gim.hackathon.ejb.model.Proposal;
+import be.gim.hackathon.ejb.utils.GeometryUtils;
+import org.hibernate.Session;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -37,5 +39,16 @@ public class ProposalDaoImpl implements ProposalDao {
   public List<Proposal> findAll() {
     return entityManager.createNamedQuery(Proposal.FIND_ALL_PROPOSALS_QUERY_NAME, Proposal.class)
       .getResultList();
+  }
+
+  @Override
+  public boolean isInRelevantArea(Proposal proposal) {
+    return getSession().createNativeQuery("select count(*) from isochrone i where st_contains(i.geom, ST_GEOMFROMTEXT(:parcelGeom, 3857))")
+      .setParameter("parcelGeom", GeometryUtils.WKT_WRITER.write(proposal.getGeometry()))
+      .getFirstResult() > 1;
+  }
+
+  private Session getSession() {
+    return entityManager.unwrap(Session.class);
   }
 }
