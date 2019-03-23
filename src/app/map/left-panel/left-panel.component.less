@@ -46,13 +46,17 @@
       text-transform: uppercase;
       width: 100%;
 
-      &.btn-primary {
+      &.btn-primary,
+      &.btn-primary:hover{
         background-color: @theme-color-dark;
+        border-color: @theme-color-dark;
         color: white;
       }
-      &.btn-outline-primary {
+      &.btn-outline-primary,
+      &.btn-outline-primary:hover{
         color: @theme-color-dark;
         border-color: @theme-color-dark;
+        background-color: white;
       }
     }
   }
