@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {FormDataService} from '../../services/form-data.service';
-import {Proposition} from '../../classes/proposition';
 import {LoginService} from '../../services/login.service';
 
 @Component({

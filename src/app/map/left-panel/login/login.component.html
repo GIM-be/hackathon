@@ -31,9 +31,17 @@
           </div>
         </form>
       </div>
+
       <div *ngIf="userService.getLogged()">
-        <button (click)="userService.logout()">Logout</button>
+        <p>
+          Vous &ecirc;tes connect&eacute;.
+        </p>
+        <div class="row py-3">
+          <div class="col-6"></div>
+          <div class="col-6"><a class="btn btn-primary" (click)="userService.logout()">D&eacute;connection</a></div>
+        </div>
       </div>
+
     </div>
   </div>
 
