@@ -14,7 +14,8 @@ create table proposal
   id          serial       not null
     constraint proposal_pkey
     primary key,
-  geometry    text     not null,
+  geometry    geometry     not null,
   name        varchar(256) not null,
-  description text
+  description text,
+  CONSTRAINT parcel_srid_geometry CHECK ((st_srid(geometry) = 3857))
 );

@@ -4,11 +4,18 @@
   version="2.0">
   <persistence-unit name="hackathon" transaction-type="JTA">
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-    <jta-data-source>java:jboss/jdbc/hackathonDs</jta-data-source>
+    <!--<jta-data-source>java:jboss/jdbc/hackathonDs</jta-data-source>-->
 
 
 
     <properties>
+
+      <property name="hibernate.connection.url" value="jdbc:postgresql://db:5432/myapp"/>
+      <property name="hibernate.connection.username" value="myapp"/>
+      <property name="hibernate.connection.password" value="my-password"/>
+      <property name="hibernate.connection.pool_size" value="5"/>
+
+      <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
       <property name="hibernate.connection.persistence.xmldriver_class" value="org.postgresql.Driver"/>
       <property name="hibernate.dialect" value="org.hibernate.spatial.dialect.postgis.PostgisPG95Dialect"/>
       <property name="hibernate.default_schema" value="test_sch"/>
