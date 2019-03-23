@@ -1,6 +1,7 @@
 package be.gim.hackathon.web;
 
 import be.gim.hackathon.ejb.model.Proposal;
+import be.gim.hackathon.ejb.model.ProposalType;
 import be.gim.hackathon.ejb.service.api.ProposalService;
 
 import javax.ejb.EJB;
@@ -12,7 +13,11 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 /**
  * @author rhardenne
@@ -47,5 +52,12 @@ public class ProposalEndPoint {
     return proposalService.findAllProposals();
   }
 
+  @GET
+  @Path("type/all")
+  @Produces(MediaType.APPLICATION_JSON)
+  public Map<ProposalType, String> getAllTypes() {
+    return Arrays.stream(ProposalType.values())
+      .collect(Collectors.toMap(Function.identity(), ProposalType::getLabel));
+  }
 
 }
