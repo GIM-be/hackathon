@@ -1,5 +1,4 @@
-import { Injectable } from '@angular/core';
-import {ProjectionLike} from '../classes/projection-like';
+import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {tap} from 'rxjs/operators';
@@ -23,7 +22,9 @@ export class DataService {
     return this.http.get<any>('http://localhost:8080/hackathon/proposal/all').pipe(
       tap(response => {
         response.forEach(proposal => {
-          this.proposals.push(new Proposition(this.wktParser.readGeometry(proposal.geometry)));
+          this.proposals.push(
+            new Proposition(proposal.id, this.wktParser.readGeometry(proposal.geometry), proposal.name, proposal.description)
+          );
         });
       })
     );

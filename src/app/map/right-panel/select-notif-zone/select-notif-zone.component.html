@@ -1,0 +1,10 @@
+<div class="notif-zone-select">
+  <div *ngIf="!isSelecting">
+    <a class="btn btn-lg mx-1 btn-outline-primary text-dark" (click)="onSelectionStart()">Notification Zone</a>
+  </div>
+  <div *ngIf="isSelecting" class="selection-zone-btn">
+    <a class="btn btn-lg mx-1 btn-outline-primary text-dark" (click)="onSelectionEnd(false)">Confirm</a>
+      <a class="btn btn-lg mx-1 btn-outline-primary text-dark" (click)="onSelectionEnd(true)">Cancel</a>
+  </div>
+</div>
+
