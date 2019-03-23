@@ -8,6 +8,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LayerComponent } from './layer/layer.component';
 import { CreatePointButtonComponent } from './create-point-button/create-point-button.component';
 import { LeftPanelComponent } from './map/left-panel/left-panel.component';
+import { DetailsComponent } from './map/left-panel/details/details.component';
 import { RightPanelComponent } from './map/right-panel/right-panel.component';
 import { LayermanagerComponent } from './map/right-panel/layermanager/layermanager.component';
 
@@ -20,6 +21,7 @@ import { LayermanagerComponent } from './map/right-panel/layermanager/layermanag
     LeftPanelComponent,
     RightPanelComponent,
     LayermanagerComponent,
+    DetailsComponent,
   ],
   imports: [
     BrowserModule,

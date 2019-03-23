@@ -1,12 +1,14 @@
-<div class="layer-manager-item noselect"
-     (click)="toggleLayerVisibility(layer)"
-     [ngClass]="{'selected': layer.visible}"
-     *ngFor="let layer of layers">
+<div class="tab-content thin-scrollable">
+  <div class="layer-manager-item noselect"
+       (click)="toggleLayerVisibility(layer)"
+       [ngClass]="{'selected': layer.visible}"
+       *ngFor="let layer of layers">
 
-  <div class="layername text-overflow-ellipsiss">
-    <span [hidden]="layer.visible" class="lyr-icon"><i class="far fa-circle"></i></span>
-    <span [hidden]="!layer.visible" class="lyr-icon"><i class="far fa-check-circle"></i></span>
-    <span [textContent]="layer.name" class="label"></span>
+    <div class="layername text-overflow-ellipsiss">
+      <span [hidden]="layer.visible" class="lyr-icon"><i class="far fa-circle"></i></span>
+      <span [hidden]="!layer.visible" class="lyr-icon"><i class="far fa-check-circle"></i></span>
+      <span [textContent]="layer.name" class="label"></span>
+    </div>
   </div>
-
+  
 </div>

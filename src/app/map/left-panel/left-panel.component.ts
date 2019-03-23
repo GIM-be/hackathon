@@ -23,10 +23,6 @@ export class LeftPanelComponent implements OnInit {
     return false;
   }
 
-  submitProposition() {
-    this.formDataService.sendToBackend();
-  }
-
   // toggleRightPanel() {
   //   this.openLeftPanel = !this.openLeftPanel;
   // }
