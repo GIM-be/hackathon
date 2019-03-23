@@ -11,8 +11,13 @@ import {click, shiftKeyOnly, pointerMove, altKeyOnly, singleClick} from '../../.
 import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ViewChild } from '@angular/core';
 import {DataService} from './data.service';
-import {Proposition} from "../classes/proposition";
+import {Proposition} from '../classes/proposition';
 import {Vector as VectorLayer} from 'ol/layer';
+import {FormDataService} from './form-data.service';
+import {ConfirmBeforeAction} from '../classes/confirm-before-action';
+import * as jsts from 'jsts';
+import Feature from 'ol/Feature.js';
+import MultiLineString from 'ol/geom/MultiLineString';
 
 
 @Injectable({
@@ -23,9 +28,10 @@ export class InteractionService {
   map: Map;
   interactions: any = {};
   currentInteraction: string;
-  showProposalModalValue: any= {value: false};
+  showProposalModalValue: any = {value: false};
   selectedProposal: Proposition;
-  constructor(private layerService: LayerService, private dataService: DataService) { }
+  confirmBeformAction: ConfirmBeforeAction;
+  constructor(private layerService: LayerService, private dataService: DataService, private formDataService: FormDataService) { }
 
   init(map: Map) {
     this.map = map;
@@ -46,7 +52,31 @@ export class InteractionService {
     });
   }
 
-  deselectProposal(){
+  createSelectRoad() {
+    this.interactions.selectRoad = new Select({
+      layers: [this.layerService.layers.routeCyclable.olLayer],
+      hitTolerance: 15,
+      multi: true
+    });
+
+    this.interactions.selectRoad.on('select', e => {
+      if (!this.confirmBeformAction) {
+        this.confirmBeformAction = new ConfirmBeforeAction(() => {
+          const features = e.selected;
+          const result = new MultiLineString(_.map(features, feature => feature.getGeometry()));
+          let newProposition = new Proposition(null, new Feature({geometry: result}), null, null);
+          this.layerService.layers.proposals.olLayer.getSource().addFeature(newProposition.feature);
+          this.formDataService.setFormDataToTreat(newProposition);
+          this.confirmBeformAction = null;
+        }, () => {
+          this.interactions.selectRoad.getFeatures().clear();
+          this.confirmBeformAction = null;
+        });
+      }
+    });
+  }
+
+  deselectProposal() {
     this.interactions.selectProposal.getFeatures().clear();
     this.showProposalModalValue.value = false;
   }

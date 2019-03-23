@@ -14,6 +14,7 @@ export class ToolbarComponent implements OnInit {
   drawPoint: any;
   drawLine: any;
   drawPolygon: any;
+  createSelectRoad: any;
 
   constructor(private interactionService: InteractionService,
               private formDataService: FormDataService,
@@ -23,6 +24,7 @@ export class ToolbarComponent implements OnInit {
     this.drawPoint = this.interactionService.createAddPointInteraction('drawPoint');
     this.drawLine = this.interactionService.createAddLineInteraction('drawLine');
     this.drawPolygon = this.interactionService.createAddPolygonInteraction('drawPolygon');
+    this.createSelectRoad = this.interactionService.createSelectRoad();
     this.drawPoint.on('drawend', e => {
       this.formDataService.setFormDataToTreat(
         new Proposition(null, e.feature, '', '')

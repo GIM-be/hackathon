@@ -16,6 +16,7 @@ export class FormDataService {
   constructor(private http: HttpClient, private dataService: DataService, private layerService: LayerService) { }
 
   setFormDataToTreat(formData) {
+    formData.feature.setId(Date.now());
     this.formDataToTreat.feature = formData.feature;
   }
 

@@ -59,10 +59,10 @@ export class LayerService {
     });
     let routeCyclableLayer;
     routeCyclableLayer = new Layer('', 'Routes Cyclables', '', [], '', '', true);
-    routeCyclable.olLayer = routeCyclable;
+    routeCyclableLayer.olLayer = routeCyclable;
     routeCyclable.set('showInLayerManager', true);
     routeCyclable.set('name', routeCyclableLayer.name);
-    this.layers.routeCcylable = routeCyclableLayer;
+    this.layers.routeCyclable = routeCyclableLayer;
     return routeCyclable;
   }
 
