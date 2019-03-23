@@ -8,11 +8,13 @@ import {ProjectionLike} from './projection-like';
 import * as proj4x from 'proj4';
 const proj4 = (proj4x as any).default;
 import {register} from 'ol/proj/proj4.js';
-import {extent, proj} from 'openlayers';
 import {get as getProjection, getTransform} from 'ol/proj.js';
 import {applyTransform} from 'ol/extent.js';
 import {Vector as VectorSource} from 'ol/source';
 import {Vector as VectorLayer} from 'ol/layer';
+import {LayerService} from './layer.service';
+import * as extent from 'ol/extent.js';
+import {InteractionService} from "./interaction.service";
 
 @Injectable({
   providedIn: 'root'
@@ -21,32 +23,31 @@ export class MapService {
 
   map: Map;
   drawLayer: VectorLayer;
-  constructor(private http: HttpClient) { }
+  projectionObject = {code: '31370', kind: 'CRS-PROJCRS', bbox: [51.51, 2.5, 49.5, 6.4], wkt: 'PROJCS["Belge 1972 / Belgian Lambert 72",GEOGCS["Belge 1972",DATUM["Reseau_National_Belge_1972",SPHEROID["International 1924",6378388,297,AUTHORITY["EPSG","7022"]],TOWGS84[-106.869,52.2978,-103.724,0.3366,-0.457,1.8422,-1.2747],AUTHORITY["EPSG","6313"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4313"]],PROJECTION["Lambert_Conformal_Conic_2SP"],PARAMETER["standard_parallel_1",51.16666723333333],PARAMETER["standard_parallel_2",49.8333339],PARAMETER["latitude_of_origin",90],PARAMETER["central_meridian",4.367486666666666],PARAMETER["false_easting",150000.013],PARAMETER["false_northing",5400088.438],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["X",EAST],AXIS["Y",NORTH],AUTHORITY["EPSG","31370"]]', unit: 'metre', proj4: '+proj=lcc +lat_1=51.16666723333333 +lat_2=49.8333339 +lat_0=90 +lon_0=4.367486666666666 +x_0=150000.013 +y_0=5400088.438 +ellps=intl +towgs84=-106.869,52.2978,-103.724,0.3366,-0.457,1.8422,-1.2747 +units=m +no_defs', name: 'Belge 1972 / Belgian Lambert 72', area: 'Belgium - onshore.', default_trans: 0, trans: [15749, 15929, 1609, 1610], accuracy: ''};
+  constructor(private http: HttpClient, private layerService: LayerService, private interactionService: InteractionService) { }
 
   initMap() {
-    const source = new VectorSource({wrapX: false});
-
-    this.drawLayer = new VectorLayer({
-      source
-    });
+    const wallExtent: [number, number, number, number] = [295477.314255, 6347477.319654, 740430.033845, 6640885.073618];
     this.map = new Map({
       layers: [
         new TileLayer({
           source: new OSM()
-        }),
-        this.drawLayer
+        })
       ],
       target: 'map',
       view: new View({
+        extent: wallExtent,
         projection: 'EPSG:3857',
-        center: [0, 0],
+        center: extent.getCenter(wallExtent),
         zoom: 1
       })
     });
     this.map.on('rendercomplete', event => {
       console.log('rendered');
     });
-    this.searchProjection('31370');
+    this.map.getView().fit(wallExtent);
+    this.layerService.createLayers(this.map);
+    this.interactionService.init(this.map);
   }
 
   searchProjection(code) {
@@ -86,5 +87,9 @@ export class MapService {
 
   getDrawLayer(): VectorLayer {
     return this.drawLayer;
+  }
+
+  getMap(): Map {
+    return this.map;
   }
 }
