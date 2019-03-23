@@ -6,6 +6,7 @@ import be.gim.hackathon.ejb.model.Proposal;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -30,5 +31,11 @@ public class ProposalDaoImpl implements ProposalDao {
   @Override
   public Proposal insertOrUpdate(Proposal toInsert) {
     return entityManager.merge(toInsert);
+  }
+
+  @Override
+  public List<Proposal> findAll() {
+    return entityManager.createNamedQuery(Proposal.FIND_ALL_PROPOSALS_QUERY_NAME, Proposal.class)
+      .getResultList();
   }
 }

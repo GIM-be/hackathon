@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
@@ -18,10 +19,14 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "proposal")
-@NamedQuery(name = Proposal.FIND_PROPOSAL_BY_ID_QUERY_NAME, query = "SELECT p FROM Proposal p WHERE p." + Proposal.ID_FIELD_NAME + " = :id ")
+@NamedQueries({
+  @NamedQuery(name = Proposal.FIND_PROPOSAL_BY_ID_QUERY_NAME, query = "SELECT p FROM Proposal p WHERE p." + Proposal.ID_FIELD_NAME + " = :id "),
+  @NamedQuery(name = Proposal.FIND_ALL_PROPOSALS_QUERY_NAME, query = "SELECT p FROM Proposal p")
+})
 public class Proposal implements WithGeometry {
 
   public static final String FIND_PROPOSAL_BY_ID_QUERY_NAME = "findProposalById";
+  public static final String FIND_ALL_PROPOSALS_QUERY_NAME = "findAllProposals";
   public static final String ID_FIELD_NAME = "id";
   @Id
   @Column(name = ID_FIELD_NAME)
