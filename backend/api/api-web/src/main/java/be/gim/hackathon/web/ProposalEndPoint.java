@@ -45,6 +45,22 @@ public class ProposalEndPoint {
     return proposalService.create(proposal);
   }
 
+  @POST
+  @Path("{id}/positiveVote")
+  @Produces(MediaType.APPLICATION_JSON)
+  @Consumes(MediaType.APPLICATION_JSON)
+  public Proposal positiveVote(@PathParam("id")Integer proposalId) {
+    return proposalService.vote(proposalId, true);
+  }
+
+  @POST
+  @Path("{id}/negativeVote")
+  @Produces(MediaType.APPLICATION_JSON)
+  @Consumes(MediaType.APPLICATION_JSON)
+  public Proposal negativeVote(@PathParam("id")Integer proposalId) {
+    return proposalService.vote(proposalId, false);
+  }
+
   @GET
   @Path("all")
   @Produces(MediaType.APPLICATION_JSON)
@@ -59,5 +75,7 @@ public class ProposalEndPoint {
     return Arrays.stream(ProposalType.values())
       .collect(Collectors.toMap(Function.identity(), ProposalType::getLabel));
   }
+
+
 
 }

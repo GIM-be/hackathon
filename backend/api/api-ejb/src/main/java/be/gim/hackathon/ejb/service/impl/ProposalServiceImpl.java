@@ -34,4 +34,21 @@ public class ProposalServiceImpl implements ProposalService {
     return proposalDao.findAll();
   }
 
+  @Override
+  public Proposal vote(Integer proposalId, boolean vote) {
+    Optional<Proposal> proposalOpt = proposalDao.findById(proposalId);
+
+    if (proposalOpt.isPresent()) {
+      Proposal proposal = proposalOpt.get();
+      if (vote) {
+        proposal.incrementPositiveCount();
+      } else {
+        proposal.incrementNegativeCount();
+      }
+      return proposalDao.insertOrUpdate(proposal);
+    } else {
+      throw new RuntimeException(String.format("Could not find proposal with id %s", proposalId));
+    }
+  }
+
 }

@@ -17,4 +17,6 @@ public interface ProposalService {
   Proposal create(Proposal toCreate);
 
   List<Proposal> findAllProposals();
+
+  Proposal vote(Integer proposalId, boolean vote);
 }

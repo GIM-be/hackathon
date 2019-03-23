@@ -44,6 +44,10 @@ public class Proposal implements WithGeometry {
   @Column(name = "type")
   @Enumerated(EnumType.STRING)
   private ProposalType type;
+  @Column(name = "positive_count")
+  private Integer positiveCount;
+  @Column(name = "negative_count")
+  private Integer negativeCount;
 
   public Integer getId() {
     return id;
@@ -89,5 +93,37 @@ public class Proposal implements WithGeometry {
   public Proposal setType(ProposalType type) {
     this.type = type;
     return this;
+  }
+
+  public Integer getPositiveCount() {
+    return positiveCount;
+  }
+
+  public Proposal setPositiveCount(Integer positiveCount) {
+    this.positiveCount = positiveCount;
+    return this;
+  }
+
+  public Integer getNegativeCount() {
+    return negativeCount;
+  }
+
+  public Proposal setNegativeCount(Integer negativeCount) {
+    this.negativeCount = negativeCount;
+    return this;
+  }
+
+  public int incrementPositiveCount() {
+    if (positiveCount == null) {
+      setPositiveCount(0);
+    }
+    return ++positiveCount;
+  }
+
+  public int incrementNegativeCount() {
+    if (negativeCount == null) {
+      setNegativeCount(0);
+    }
+    return ++negativeCount;
   }
 }
