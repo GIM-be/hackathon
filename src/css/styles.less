@@ -1,0 +1,87 @@
+@import 'constants';
+@import 'xbrowser';
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+app-root {
+
+  // Disables pull-to-refresh and overscroll glow effect on chrome mobile version.
+  overscroll-behavior-y: none;
+
+  // No outline on focused elements
+  *:focus {
+    outline: none !important;
+  }
+
+  .thin-scrollable {
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      background-color: @theme-color-light;
+    }
+    &::-webkit-scrollbar {
+      width: 6px;
+      background-color: @theme-color-light;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: @theme-color-dark;
+    }
+  }
+
+  .pointer{
+    cursor: pointer;
+  }
+  .no-padding {
+    padding: 0 !important;
+  }
+  .no-margin {
+    margin: 0 !important;
+  }
+  .transition-default {
+    .transition(all 300ms ease 0s);
+  }
+  .transition-fast {
+    .transition(all 100ms ease 0s);
+  }
+
+  #map {
+    //Override ol-control default styling (ol.css)
+    .ol-control {
+      padding: 0 !important;
+      border-radius: unset !important;
+      background-color: lightgrey !important;
+
+      button {
+        background-color: white !important;
+        color: @secondary-grey-normal !important;
+        height: 2.3em !important;
+        width: 2.3em !important;
+        &:hover {
+          cursor: pointer;
+          background-color: @secondary-grey-light !important;
+        }
+      }
+    }
+
+    .ol-scale-line {
+      background: white;
+      border-radius: unset;
+      padding: 5px;
+      border: solid 1px lightgrey;
+
+      .ol-scale-line-inner {
+        border: 1px solid @secondary-grey-normal;
+        border-top: none;
+        color: @secondary-grey-normal;
+      }
+    }
+
+    .ol-zoom {
+      top: 2em;
+      left: 2em;
+    }
+  }
+}

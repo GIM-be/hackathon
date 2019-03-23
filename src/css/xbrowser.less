@@ -1,0 +1,47 @@
+.calc(@prop, @val) {
+    @{prop}: ~"-moz-calc(@{val})";
+    @{prop}: ~"-webkit-calc(@{val})";
+    @{prop}: ~"calc(@{val})";
+}
+.transition(@val) {
+  -webkit-transition: @val;
+  -moz-transition: @val;
+  -ms-transition: @val;
+  -o-transition: @val;
+  transition: @val;
+}
+.translate(@x, @y) {
+  -webkit-transform: translate(@x, @y);
+  -moz-transform: translate(@x, @y);
+  -ms-transform: translate(@x, @y);
+  -o-transform: translate(@x, @y);
+  transform: translate(@x, @y);
+}
+.scale(@val) {
+  -webkit-transform: scale(@val);
+  -moz-transform: scale(@val);
+  -ms-transform: scale(@val);
+  -o-transform: scale(@val);
+  transform: scale(@val);
+}
+.blurred(@val) {
+  -webkit-filter: blur(@val);
+  -moz-filter: blur(@val);
+  -o-filter: blur(@val);
+  -ms-filter: blur(@val);
+  filter: blur(@val);
+}
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.text-overflow-ellipsiss {
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

@@ -7,6 +7,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { TestComponent } from './test/test.component';
 import { LayerComponent } from './layer/layer.component';
 import { CreatePointButtonComponent } from './create-point-button/create-point-button.component';
+import { RightPanelComponent } from './map/right-panel/right-panel.component';
+import { LayermanagerComponent } from './map/right-panel/layermanager/layermanager.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { CreatePointButtonComponent } from './create-point-button/create-point-b
     MapComponent,
     TestComponent,
     LayerComponent,
-    CreatePointButtonComponent
+    CreatePointButtonComponent,
+    RightPanelComponent,
+    LayermanagerComponent,
   ],
   imports: [
     BrowserModule,

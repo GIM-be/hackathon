@@ -5,6 +5,8 @@ import View from 'ol/View';
 import TileLayer from 'ol/layer/Tile';
 import OSM from 'ol/source/OSM';
 import {ProjectionLike} from '../classes/projection-like';
+import BaseLayer from 'ol/layer/Base';
+import Collection from 'ol/Collection';
 import * as proj4x from 'proj4';
 const proj4 = (proj4x as any).default;
 import {register} from 'ol/proj/proj4.js';
@@ -91,5 +93,30 @@ export class MapService {
 
   getMap(): Map {
     return this.map;
+  }
+
+  findLayerByName(name) {
+    let layerObject = null;
+    this.map.getLayers().forEach(l => {
+      if (!layerObject && l.get('name') === name) {
+        layerObject = l;
+      }
+    });
+    return layerObject;
+  }
+
+  getLayersInLayerManager(): Collection<BaseLayer> {
+    if (!this.map) {
+      return new Collection();
+    }
+    return new Collection(
+      this.map.getLayers().getArray().filter(layer => {
+        return layer.get('showInLayerManager') === true;
+      })
+    );
+  }
+
+  getNbLayersInLayerManager() {
+    return this.getLayersInLayerManager().getLength();
   }
 }
