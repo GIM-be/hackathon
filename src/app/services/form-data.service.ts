@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import {Proposition} from '../classes/proposition';
-import {HttpClient} from '@angular/common/http';
+import { Proposition } from '../classes/proposition';
+import { HttpClient } from '@angular/common/http';
 import WKT from 'ol/format/WKT';
 
 @Injectable({

@@ -1,0 +1,44 @@
+@import '../../../css/constants';
+@import '../../../css/xbrowser';
+
+#map-sidenav-left {
+  position: fixed;
+  z-index: 50;
+  height: 100%;
+  width: 50%;
+  top: 0;
+  left: -50%;
+  min-width: 200px;
+  visibility: hidden;
+  background-color: white;
+
+  &.open {
+    visibility: visible;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+    left: 0;
+  }
+
+  .sidenav-title {
+    padding: 10px;
+    background-color: @theme-color-dark;
+    color: white;
+    border-bottom: solid 1px @secondary-grey-light;
+    line-height: 36px;
+    text-transform: uppercase;
+
+    h2.title {
+      font-size: 13px;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      margin: 8px;
+      @media @screen-s {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .sidenav-content {
+    position: relative;
+    overflow-y: hidden;
+    background-color: white;
+  }
+}

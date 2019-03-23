@@ -1,4 +1,4 @@
-<div id="map-sidenav" class="sidenav transition-default"
+<div id="map-sidenav-right" class="sidenav transition-default"
      [ngClass]="{'mobile': isMobileScreen(), 'open': (openRightPanel || !isMobileScreen())}">
 
   <div class="sidenav-title" [ngSwitch]="isMobileScreen()">
@@ -28,7 +28,7 @@
 </div>
 
 <!-- open menu when hidden -->
-<div id="map-sidenav-mobile-toggler"
+<div id="map-sidenav-right-mobile-toggler"
      (click)="toggleRightPanel()"
      [hidden]="!isMobileScreen() || openRightPanel">
   <h2 class="title">Menu Carte</h2>

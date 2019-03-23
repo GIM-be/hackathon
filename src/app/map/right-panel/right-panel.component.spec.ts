@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { RightPanelComponent } from './right-panel.component';
 
-describe('RightPanelComponent', () => {
+describe('LeftPanelComponent', () => {
   let component: RightPanelComponent;
   let fixture: ComponentFixture<RightPanelComponent>;
 
