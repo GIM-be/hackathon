@@ -1,5 +1,6 @@
 package be.gim.hackathon.web;
 
+import be.gim.hackathon.ejb.model.NotificationZone;
 import be.gim.hackathon.ejb.model.User;
 import be.gim.hackathon.ejb.service.api.UserService;
 
@@ -37,6 +38,14 @@ public class UserEndPoint {
   @Consumes(MediaType.APPLICATION_JSON)
   public User create(User user) {
     return userService.createUser(user);
+  }
+
+  @POST
+  @Path("{id}/notificationZone/add")
+  @Produces(MediaType.APPLICATION_JSON)
+  @Consumes(MediaType.APPLICATION_JSON)
+  public User addNotificationZone(@PathParam("id") Integer id, NotificationZone notificationZone) {
+    return userService.addNotificationZone(id, notificationZone).orElse(null);
   }
 
 }
