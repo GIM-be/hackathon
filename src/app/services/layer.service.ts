@@ -21,16 +21,21 @@ export class LayerService {
 
   createLayers(map: Map) {
     this.map = map;
-    const source = new VectorSource({wrapX: false});
 
+    // draw layer
     this.drawLayer = new VectorLayer({
-      source
+      source: new VectorSource({wrapX: false})
     });
-    map.addLayer(this.drawLayer)
-    const picc = new Layer('http://geoservices.wallonie.be/arcgis/services/TOPOGRAPHIE/PICC_VDIFF/MapServer/WMSServer?', 'Fond de plan PICC',
+    map.addLayer(this.drawLayer);
+
+    // picc wms
+    const picLayer = new Layer('http://geoservices.wallonie.be/arcgis/services/TOPOGRAPHIE/PICC_VDIFF/MapServer/WMSServer?', 'Fond de plan PICC',
       '0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27',
-      [30000.000000, 15000.000000, 310000.000000, 200000.000000], 'EPSG:3857', 'WMS');
-    map.addLayer(this.createWMSLayer(picc));
+      [30000.000000, 15000.000000, 310000.000000, 200000.000000], 'EPSG:3857', 'WMS')
+    const piccWms = this.createWMSLayer(picLayer);
+    piccWms.set('name', picLayer.name);
+    piccWms.set('showInLayerManager', true);
+    map.addLayer(piccWms);
     return ;
   }
 

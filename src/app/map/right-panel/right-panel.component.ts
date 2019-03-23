@@ -10,7 +10,7 @@ import {ResponsivenessServiceService} from '../../services/responsiveness-servic
 export class RightPanelComponent implements OnInit {
 
   openRightPanel;
-  getNbLayers = this.mapService.getNbLayersInLayerManager;
+  getNbLayers = this.getNbLayersInLayerManager;
   isMobileScreen = this.responsivenessServiceService.isMobileScreen;
 
   constructor(private responsivenessServiceService: ResponsivenessServiceService,
@@ -22,6 +22,10 @@ export class RightPanelComponent implements OnInit {
 
   toggleRightPanel() {
     this.openRightPanel = !this.openRightPanel;
+  }
+
+  getNbLayersInLayerManager() {
+    return this.mapService.getLayersInLayerManager().getLength();
   }
 
   backdropActive() {

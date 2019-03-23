@@ -115,8 +115,4 @@ export class MapService {
       })
     );
   }
-
-  getNbLayersInLayerManager() {
-    return this.getLayersInLayerManager().getLength();
-  }
 }

@@ -14,7 +14,7 @@ export class LayermanagerComponent implements OnInit {
 
   ngOnInit() {
     this.refreshLayers();
-    this.mapService.getLayersInLayerManager().on('propertychange', () => {
+    this.mapService.getMap().getLayers().on('propertychange', () => {
       console.log('A layer property has changed');
       this.refreshLayers();
     });
@@ -23,7 +23,11 @@ export class LayermanagerComponent implements OnInit {
   refreshLayers() {
     let newLayersList = [];
     this.mapService.getLayersInLayerManager().getArray().forEach(layer => {
-      newLayersList.push(layer.getProperties());
+      const layerProperty = layer.getProperties();
+      layer.on('propertychange', e => {
+        layerProperty.visible = e.target.getVisible();
+      });
+      newLayersList.push(layerProperty);
     });
     this.layers = newLayersList;
   }
