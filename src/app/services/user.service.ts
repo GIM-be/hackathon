@@ -17,7 +17,6 @@ export class UserService {
   login(email: string) {
     this.http.get(`http://localhost:8080/hackathon/user?login=${email}`).subscribe(
       (response: any) => {
-        console.log(response);
         if(response) {
           this.email = response.login;
           this.userId = response.id;
