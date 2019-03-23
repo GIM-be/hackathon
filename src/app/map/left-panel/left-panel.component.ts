@@ -16,7 +16,7 @@ export class LeftPanelComponent implements OnInit {
   ngOnInit() {}
 
   isLeftPanelOpen() {
-    if(this.formDataService.getFormDataToTreat().geometry !== null){
+    if (this.formDataService.getFormDataToTreat().geometry !== null) {
       this.formDataToTreat = this.formDataService.getFormDataToTreat();
       return true;
     }

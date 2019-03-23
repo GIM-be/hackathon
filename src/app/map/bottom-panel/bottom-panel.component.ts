@@ -17,7 +17,7 @@ export class BottomPanelComponent implements OnInit {
     this.interaction = this.interactionService.createAddPointInteraction('drawPoint');
     this.interaction.on('drawend', e => {
       this.formDataService.setFormDataToTreat(
-        new Proposition(e.feature.getGeometry(), '', '')
+        new Proposition(null, e.feature.getGeometry(), '', '')
       );
     });
   }
