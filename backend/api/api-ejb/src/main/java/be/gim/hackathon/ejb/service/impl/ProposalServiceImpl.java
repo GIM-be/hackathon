@@ -6,6 +6,7 @@ import be.gim.hackathon.ejb.service.api.ProposalService;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -14,7 +15,6 @@ import java.util.Optional;
  */
 @Stateless
 public class ProposalServiceImpl implements ProposalService {
-
 
   @EJB
   private ProposalDao proposalDao;
@@ -27,6 +27,11 @@ public class ProposalServiceImpl implements ProposalService {
   @Override
   public Proposal create(Proposal toCreate) {
     return proposalDao.insertOrUpdate(toCreate);
+  }
+
+  @Override
+  public List<Proposal> findAllProposals() {
+    return proposalDao.findAll();
   }
 
 }

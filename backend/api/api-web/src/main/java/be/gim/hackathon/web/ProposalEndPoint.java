@@ -12,6 +12,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import java.util.List;
 
 /**
  * @author rhardenne
@@ -38,5 +39,13 @@ public class ProposalEndPoint {
   public Proposal create(Proposal proposal) {
     return proposalService.create(proposal);
   }
+
+  @GET
+  @Path("all")
+  @Produces(MediaType.APPLICATION_JSON)
+  public List<Proposal> getAll() {
+    return proposalService.findAllProposals();
+  }
+
 
 }
