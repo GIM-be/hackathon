@@ -10,10 +10,10 @@ import { LeftPanelComponent } from './map/left-panel/left-panel.component';
 import { DetailsComponent } from './map/left-panel/details/details.component';
 import { RightPanelComponent } from './map/right-panel/right-panel.component';
 import { LayermanagerComponent } from './map/right-panel/layermanager/layermanager.component';
-import { BottomPanelComponent } from './map/bottom-panel/bottom-panel.component';
 import { SelectNotifZoneComponent } from './map/right-panel/select-notif-zone/select-notif-zone.component';
 import { ProposalModalComponent } from './proposal-modal/proposal-modal.component';
-import { LoginFormComponent } from './map/right-panel/login-form/login-form.component';
+import { ToolbarComponent } from './map/toolbar/toolbar.component';
+import { LoginComponent } from './map/left-panel/login/login.component';
 
 @NgModule({
   declarations: [
@@ -25,9 +25,9 @@ import { LoginFormComponent } from './map/right-panel/login-form/login-form.comp
     RightPanelComponent,
     LayermanagerComponent,
     ProposalModalComponent,
-    BottomPanelComponent,
+    ToolbarComponent,
     SelectNotifZoneComponent,
-    LoginFormComponent
+    LoginComponent
   ],
   imports: [
     BrowserModule,

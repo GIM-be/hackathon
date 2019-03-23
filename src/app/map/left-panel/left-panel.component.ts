@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {FormDataService} from '../../services/form-data.service';
 import {Proposition} from '../../classes/proposition';
+import {LoginService} from '../../services/login.service';
 
 @Component({
   selector: 'app-left-panel',
@@ -9,21 +10,29 @@ import {Proposition} from '../../classes/proposition';
 })
 export class LeftPanelComponent implements OnInit {
 
-  formDataToTreat: Proposition = new Proposition(null, null, null, null);
+  TABS = {
+    LOGIN: 1,
+    FORM: 2
+  };
 
-  constructor(private formDataService: FormDataService) { }
+  formDataToTreat: Proposition = new Proposition(null, null, null, null);
+  openedTab = null;
+
+  constructor(private formDataService: FormDataService, private loginService: LoginService) { }
 
   ngOnInit() {}
 
   isLeftPanelOpen() {
     if (this.formDataService.getFormDataToTreat().feature !== null) {
       this.formDataToTreat = this.formDataService.getFormDataToTreat();
+      this.openedTab = this.TABS.FORM;
       return true;
     }
+    if (this.loginService.getDoConnect()) {
+      this.openedTab = this.TABS.LOGIN;
+      return true;
+    }
+    this.openedTab = null;
     return false;
   }
-
-  // toggleRightPanel() {
-  //   this.openLeftPanel = !this.openLeftPanel;
-  // }
 }

@@ -1,0 +1,52 @@
+@import '../../../css/constants';
+@import '../../../css/xbrowser';
+
+#map-toolbar {
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 75px;
+  height: 100%;
+  background-color: @theme-color-dark;
+  color: @theme-color-light;
+
+  .nav {
+    li {
+      margin: 5px 0;
+      cursor: pointer;
+
+      a.user-profile {
+        font-size: 46px;
+        color: @theme-color-light;
+        margin-bottom: 20px;
+      }
+
+      a.interaction-item {
+        background-color: rgba(0,0,0,0.25);
+        width: 45px;
+        height: 45px;
+        text-align: center;
+        padding: 17px 12px;
+        border-radius: 5px;
+
+        &.active {
+          color: @theme-color-light;
+          background-color: rgba(0,0,0,0.25);
+          border: solid 2px @theme-color-light;
+          padding: 16px 12px;
+
+          i { .scale(1.5); }
+        }
+
+        i {
+          .scale(1.3);
+          &:hover {
+            .scale(1.5);
+          }
+        }
+      }
+    }
+  }
+
+}

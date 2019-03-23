@@ -2,18 +2,22 @@ import { Component, OnInit } from '@angular/core';
 import {Proposition} from '../../classes/proposition';
 import {InteractionService} from '../../services/interaction.service';
 import {FormDataService} from '../../services/form-data.service';
+import {LoginService} from '../../services/login.service';
 
 @Component({
-  selector: 'app-bottom-panel',
-  templateUrl: './bottom-panel.component.html',
-  styleUrls: ['./bottom-panel.component.less']
+  selector: 'app-toolbar',
+  templateUrl: './toolbar.component.html',
+  styleUrls: ['./toolbar.component.less']
 })
-export class BottomPanelComponent implements OnInit {
+export class ToolbarComponent implements OnInit {
 
   drawPoint: any;
   drawLine: any;
   drawPolygon: any;
-  constructor(private interactionService: InteractionService, private formDataService: FormDataService) { }
+
+  constructor(private interactionService: InteractionService,
+              private formDataService: FormDataService,
+              private loginService: LoginService) { }
 
   ngOnInit() {
     this.drawPoint = this.interactionService.createAddPointInteraction('drawPoint');
@@ -43,4 +47,9 @@ export class BottomPanelComponent implements OnInit {
   isInteractionActive(type) {
     return type === this.interactionService.currentInteraction;
   }
+
+  toggleLoginForm() {
+    this.loginService.toggleLoginForm();
+  }
+
 }
