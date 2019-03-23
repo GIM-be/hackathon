@@ -58,7 +58,10 @@ export class SelectNotifZoneComponent implements OnInit {
       }, error => {
         console.log('error');
       });
+    } else {
+      this.isSelecting = false;
+      this.mapService.getMap().removeLayer(this.vectorLayers);
+      this.interactionService.toggleInteraction(this.selectorName);
     }
-
   }
 }
