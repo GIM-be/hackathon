@@ -21,8 +21,11 @@ If it doesn't exist, create directory backend/api/api-web/src/main/resources/MET
 cd backend
 mvn clean install
 
-## docker 
+## docker - build all
 docker-compose up -d
+
+## docker - rebuild api only
+docker-compose up -d --build api
 
 ## test
 http://localhost:8080/hackathon/test
