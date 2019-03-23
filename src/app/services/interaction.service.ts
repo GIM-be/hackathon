@@ -4,8 +4,9 @@ import Map from 'ol/Map';
 import Draw from 'ol/interaction/Draw.js';
 import {LayerService} from './layer.service';
 import * as _ from 'lodash';
-import {olx} from 'openlayers';
-import interaction = olx.interaction;
+import Select from 'ol/interaction/Select.js';
+import {click, shiftKeyOnly} from '../../../node_modules/ol/events/condition.js';
+
 
 @Injectable({
   providedIn: 'root'
@@ -14,6 +15,7 @@ export class InteractionService {
   map: Map;
   interactions: any = {};
   currentInteraction: string;
+
   constructor(private layerService: LayerService) { }
 
   init(map: Map) {
@@ -28,6 +30,16 @@ export class InteractionService {
     });
     this.interactions[name] = draw;
     return draw;
+  }
+
+  createSelectMultiInteraction(name: string) {
+    let select;
+    select = new Select({
+      condition: click,
+      toggleCondition: shiftKeyOnly,
+    });
+    this.interactions[name] = select;
+    return select;
   }
 
   toggleInteraction(name) {
