@@ -90,10 +90,7 @@ export class LayerService {
   loadProposals() {
     this.dataService.loadProposals().subscribe(response => {
       this.dataService.proposals.forEach(proposal => {
-
-        const feature = new Feature({geometry: proposal.geometry});
-        feature.set('techId', proposal.id);
-        this.layers.proposals.olLayer.getSource().addFeature(feature);
+        this.layers.proposals.olLayer.getSource().addFeature(proposal.feature);
       });
     });
   }

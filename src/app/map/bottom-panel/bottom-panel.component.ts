@@ -10,14 +10,28 @@ import {FormDataService} from '../../services/form-data.service';
 })
 export class BottomPanelComponent implements OnInit {
 
-  interaction: any;
+  drawPoint: any;
+  drawLine: any;
+  drawPolygon: any;
   constructor(private interactionService: InteractionService, private formDataService: FormDataService) { }
 
   ngOnInit() {
-    this.interaction = this.interactionService.createAddPointInteraction('drawPoint');
-    this.interaction.on('drawend', e => {
+    this.drawPoint = this.interactionService.createAddPointInteraction('drawPoint');
+    this.drawLine = this.interactionService.createAddLineInteraction('drawLine');
+    this.drawPolygon = this.interactionService.createAddPolygonInteraction('drawPolygon');
+    this.drawPoint.on('drawend', e => {
       this.formDataService.setFormDataToTreat(
-        new Proposition(null, e.feature.getGeometry(), '', '')
+        new Proposition(null, e.feature, '', '')
+      );
+    });
+    this.drawLine.on('drawend', e => {
+      this.formDataService.setFormDataToTreat(
+        new Proposition(null, e.feature, '', '')
+      );
+    });
+    this.drawPolygon.on('drawend', e => {
+      this.formDataService.setFormDataToTreat(
+        new Proposition(null, e.feature, '', '')
       );
     });
   }

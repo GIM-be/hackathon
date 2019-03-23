@@ -9,14 +9,14 @@ import {Proposition} from '../../classes/proposition';
 })
 export class LeftPanelComponent implements OnInit {
 
-  formDataToTreat: Proposition = {id: null, geometry: null, name: null, description: null};
+  formDataToTreat: Proposition = new Proposition(null, null, null, null);
 
   constructor(private formDataService: FormDataService) { }
 
   ngOnInit() {}
 
   isLeftPanelOpen() {
-    if (this.formDataService.getFormDataToTreat().geometry !== null) {
+    if (this.formDataService.getFormDataToTreat().feature !== null) {
       this.formDataToTreat = this.formDataService.getFormDataToTreat();
       return true;
     }

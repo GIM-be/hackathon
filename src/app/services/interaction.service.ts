@@ -61,8 +61,28 @@ export class InteractionService {
   createAddPointInteraction(name: string) {
     let draw; // global so we can remove it later
     draw = new Draw({
-      source: this.layerService.drawLayer.getSource(),
+      source: this.layerService.layers.proposals.olLayer.getSource(),
       type: 'Point'
+    });
+    this.interactions[name] = draw;
+    return draw;
+  }
+
+  createAddLineInteraction(name: string) {
+    let draw; // global so we can remove it later
+    draw = new Draw({
+      source: this.layerService.layers.proposals.olLayer.getSource(),
+      type: 'LineString'
+    });
+    this.interactions[name] = draw;
+    return draw;
+  }
+
+  createAddPolygonInteraction(name: string) {
+    let draw; // global so we can remove it later
+    draw = new Draw({
+      source: this.layerService.layers.proposals.olLayer.getSource(),
+      type: 'Polygon'
     });
     this.interactions[name] = draw;
     return draw;
@@ -87,7 +107,8 @@ export class InteractionService {
       this.map.addInteraction(this.interactions[name]);
       this.currentInteraction = name;
     } else {
-      this.currentInteraction = this.interactions.selectProposal;
+      this.currentInteraction = 'selectProposal';
+      this.map.addInteraction(this.interactions.selectProposal);
     }
   }
 }
