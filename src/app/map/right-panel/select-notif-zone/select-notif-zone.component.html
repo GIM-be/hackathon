@@ -1,4 +1,4 @@
-<div class="notif-zone-select">
+<div class="notif-zone-select" *ngIf="userService.getLogged()">
   <div *ngIf="!isSelecting">
     <a class="btn btn-lg mx-1 btn-outline-primary text-dark" (click)="onSelectionStart()">Notification Zone</a>
   </div>

@@ -12,6 +12,7 @@ import { RightPanelComponent } from './map/right-panel/right-panel.component';
 import { LayermanagerComponent } from './map/right-panel/layermanager/layermanager.component';
 import { BottomPanelComponent } from './map/bottom-panel/bottom-panel.component';
 import { SelectNotifZoneComponent } from './map/right-panel/select-notif-zone/select-notif-zone.component';
+import { LoginFormComponent } from './map/right-panel/login-form/login-form.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SelectNotifZoneComponent } from './map/right-panel/select-notif-zone/se
     RightPanelComponent,
     LayermanagerComponent,
     BottomPanelComponent,
-    SelectNotifZoneComponent
+    SelectNotifZoneComponent,
+    LoginFormComponent
   ],
   imports: [
     BrowserModule,
