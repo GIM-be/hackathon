@@ -16,7 +16,7 @@
 
     <init-param>
       <param-name>cors.allowOrigin</param-name>
-      <param-value>*</param-value>
+      <param-value>http://localhost:4200</param-value>
     </init-param>
 
     <init-param>
