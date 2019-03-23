@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {LayerService} from '../layer.service';
+import {LayerService} from '../services/layer.service';
 
 @Component({
   selector: 'app-layer',

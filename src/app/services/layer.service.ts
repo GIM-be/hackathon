@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {Layer} from './layer';
+import {Layer} from '../classes/layer';
 import Image from 'ol/layer/Image';
 import {projection} from '@angular/core/src/render3';
 import {MapService} from './map.service';

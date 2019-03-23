@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {Proposition} from './proposition';
+import {Proposition} from '../classes/proposition';
 
 @Injectable({
   providedIn: 'root'

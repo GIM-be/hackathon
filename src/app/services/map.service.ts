@@ -4,7 +4,7 @@ import Map from 'ol/Map';
 import View from 'ol/View';
 import TileLayer from 'ol/layer/Tile';
 import OSM from 'ol/source/OSM';
-import {ProjectionLike} from './projection-like';
+import {ProjectionLike} from '../classes/projection-like';
 import * as proj4x from 'proj4';
 const proj4 = (proj4x as any).default;
 import {register} from 'ol/proj/proj4.js';
