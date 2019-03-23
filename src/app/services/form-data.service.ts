@@ -15,19 +15,27 @@ export class FormDataService {
     this.formDataToTreat = formData;
   }
 
-  sendToBackend(proposition: Proposition) {
+  sendToBackend(proposition?: Proposition)  {
     proposition = proposition ? proposition : this.formDataToTreat;
-    let geoJsonFormatter;
-    geoJsonFormatter = new WKT();
+
+    const geoJsonFormatter = new WKT();
     const propositionJson: any = {};
     propositionJson.geometry = geoJsonFormatter.writeGeometry(proposition.geometry);
-    propositionJson.name = 'testname';
-    propositionJson.description = 'testdesc';
+    propositionJson.name = proposition.name;
+    propositionJson.description = proposition.description;
+
     const options = {headers: {'Content-Type': 'application/json'}};
-    this.http.post('http://localhost:8080/hackathon/proposal/create', propositionJson, options).subscribe(response => {
+    return this.http.post('http://localhost:8080/hackathon/proposal/create', propositionJson, options).subscribe(response => {
       console.log('success');
     }, error => {
       console.log('error');
     });
+  }
+
+  getFormDataToTreat() {
+    if (!this.formDataToTreat) {
+      return new Proposition(null, '', '');
+    }
+    return this.formDataToTreat;
   }
 }

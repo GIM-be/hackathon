@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {FormDataService} from '../../services/form-data.service';
+import {Proposition} from '../../classes/proposition';
 
 @Component({
   selector: 'app-left-panel',
@@ -8,17 +9,20 @@ import {FormDataService} from '../../services/form-data.service';
 })
 export class LeftPanelComponent implements OnInit {
 
+  formDataToTreat: Proposition;
+
   constructor(private formDataService: FormDataService) { }
 
   ngOnInit() {
-  }
-
-  getFormDataToTreat() {
-    return this.formDataService.formDataToTreat;
+    this.formDataToTreat = this.formDataService.getFormDataToTreat();
   }
 
   isLeftPanelOpen() {
-    return this.getFormDataToTreat() != null;
+    return this.formDataService.getFormDataToTreat().geometry !== null;
+  }
+
+  submitProposition() {
+    this.formDataService.sendToBackend();
   }
 
   // toggleRightPanel() {
