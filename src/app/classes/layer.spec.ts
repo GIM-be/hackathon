@@ -1,4 +1,4 @@
-import { Layer } from './layer';
+import {Layer} from "./layer";
 
 describe('Layer', () => {
   it('should create an instance', () => {

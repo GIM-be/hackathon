@@ -44,9 +44,6 @@ export class MapService {
         zoom: 1
       })
     });
-    this.map.on('rendercomplete', event => {
-      console.log('rendered');
-    });
     this.map.getView().fit(wallExtent);
     this.layerService.createLayers(this.map);
     this.interactionService.init(this.map);

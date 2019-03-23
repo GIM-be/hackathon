@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 set -e
 
 # wait 15s for db

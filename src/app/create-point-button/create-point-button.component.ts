@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {InteractionService} from '../services/interaction.service';
-import {olx} from "openlayers";
+import {olx} from 'openlayers';
 import interaction = olx.interaction;
-import {FormDataService} from "../services/form-data.service";
-import {Proposition} from "../classes/proposition";
+import {FormDataService} from '../services/form-data.service';
+import {Proposition} from '../classes/proposition';
 
 @Component({
   selector: 'app-create-point-button',
@@ -22,6 +22,10 @@ export class CreatePointButtonComponent implements OnInit {
 
   activateCreatePoint() {
     this.interactionService.toggleInteraction('drawPoint');
+  }
+
+  isActive() {
+    return 'drawPoint' === this.interactionService.currentInteraction;
   }
 
 }

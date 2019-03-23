@@ -1,1 +1,1 @@
-<a class="btn btn-primary mx-1 btn-lg" (click)="activateCreatePoint()" >Take me there</a>
+<a class="btn btn-lg mx-1 btn-outline-primary" [ngClass]="{'active': isActive(), 'text-dark': !isActive()}" (click)="activateCreatePoint()" >Point</a>
