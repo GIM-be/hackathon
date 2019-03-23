@@ -5,6 +5,8 @@ import com.vividsolutions.jts.geom.Geometry;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -39,6 +41,9 @@ public class Proposal implements WithGeometry {
   private String name;
   @Column(name = "description")
   private String description;
+  @Column(name = "type")
+  @Enumerated(EnumType.STRING)
+  private ProposalType type;
 
   public Integer getId() {
     return id;
@@ -77,4 +82,12 @@ public class Proposal implements WithGeometry {
     this.geometry = geometry;
   }
 
+  public ProposalType getType() {
+    return type;
+  }
+
+  public Proposal setType(ProposalType type) {
+    this.type = type;
+    return this;
+  }
 }
