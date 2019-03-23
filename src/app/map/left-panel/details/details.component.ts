@@ -9,7 +9,7 @@ import {FormDataService} from '../../../services/form-data.service';
 })
 export class DetailsComponent implements OnInit {
 
-  formDataToTreat: Proposition;
+  formDataToTreat: Proposition = new Proposition(null, null, null, null);
 
   constructor(private formDataService: FormDataService) { }
 
@@ -19,5 +19,9 @@ export class DetailsComponent implements OnInit {
 
   submitProposition() {
     this.formDataService.sendToBackend();
+  }
+
+  cancelProposition(){
+    this.formDataService.cancelProposition();
   }
 }

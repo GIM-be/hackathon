@@ -16,7 +16,7 @@ import {Vector as VectorSource} from 'ol/source';
 import {Vector as VectorLayer} from 'ol/layer';
 import {LayerService} from './layer.service';
 import * as extent from 'ol/extent.js';
-import {InteractionService} from "./interaction.service";
+import {InteractionService} from './interaction.service';
 
 @Injectable({
   providedIn: 'root'
@@ -29,7 +29,7 @@ export class MapService {
   constructor(private http: HttpClient, private layerService: LayerService, private interactionService: InteractionService) { }
 
   initMap() {
-    const wallExtent: [number, number, number, number] = [295477.314255, 6347477.319654, 740430.033845, 6640885.073618];
+    const wallExtent: [number, number, number, number] = [537101.956419762, 6524976.712007767, 546274.3998139831, 6529453.055476718];
     this.map = new Map({
       layers: [
         new TileLayer({
@@ -45,6 +45,7 @@ export class MapService {
       })
     });
     this.map.getView().fit(wallExtent);
+
     this.layerService.createLayers(this.map);
     this.interactionService.init(this.map);
   }
@@ -113,7 +114,7 @@ export class MapService {
     );
   }
 
-  showProposalModal(){
+  showProposalModal() {
     return this.interactionService.showProposalModal();
   }
 }

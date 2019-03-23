@@ -4,6 +4,7 @@ import {Observable} from 'rxjs';
 import {tap} from 'rxjs/operators';
 import {Proposition} from '../classes/proposition';
 import WKT from 'ol/format/WKT';
+import Feature from 'ol/Feature.js';
 
 @Injectable({
   providedIn: 'root'
@@ -23,7 +24,7 @@ export class DataService {
       tap(response => {
         response.forEach(proposal => {
           this.proposals.push(
-            new Proposition(proposal.id, this.wktParser.readGeometry(proposal.geometry), proposal.name, proposal.description)
+            new Proposition(proposal.id, new Feature({geometry: this.wktParser.readGeometry(proposal.geometry), techId: proposal.id}), proposal.name, proposal.description)
           );
         });
       })

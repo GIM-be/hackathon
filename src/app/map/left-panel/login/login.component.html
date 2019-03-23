@@ -1,0 +1,49 @@
+<div class="py-4">
+  <div class="container">
+    <h1 class="title">
+      <i class="fas fa-angle-right"></i>
+      Connection
+    </h1>
+  </div>
+</div>
+
+<div class="sidenav-content">
+
+  <div class="py-2">
+    <div class="container">
+      <div *ngIf="!userService.getLogged()">
+        <form style="padding: 0 20px">
+          <div class="form-group row py-1">
+            <input type="email" class="form-control" placeholder="Enter email" id="form9"
+                   [(ngModel)]="userEmail" name="email">
+          </div>
+          <div class="form-group row py-1">
+            <!-- password authentication not used for this project -->
+            <input type="password" class="form-control" placeholder="Password" id="form10">
+            <small class="form-text text-muted text-right">
+              <a>Mot de passe oubli&eacute;</a>
+            </small>
+          </div>
+          <p class="login-error" *ngIf="userService.getError()">{{userService.getError()}}</p>
+          <div class="row py-3">
+            <div class="col-6"></div>
+            <div class="col-6"><a class="btn btn-primary" (click)="login()">Se connecter</a></div>
+          </div>
+        </form>
+      </div>
+
+      <div *ngIf="userService.getLogged()">
+        <p>
+          Vous &ecirc;tes connect&eacute;.
+        </p>
+        <div class="row py-3">
+          <div class="col-6"></div>
+          <div class="col-6"><a class="btn btn-primary" (click)="userService.logout()">D&eacute;connection</a></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+

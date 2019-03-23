@@ -27,15 +27,55 @@ export class LayerService {
 
   createLayers(map: Map) {
     this.map = map;
+    this.createDrawLayer();
+    const piccWms = this.createPiccLayer();
+    this.createProposalLayer();
+    const routeCyclable = this.createRouteCyclableLayer();
+    this.map.addLayer(piccWms);
+    this.map.addLayer(routeCyclable);
+    this.map.addLayer(this.layers.proposals.olLayer);
+    this.map.addLayer(this.drawLayer);
 
-    // draw layer
+    this.loadProposals();
+    return ;
+  }
+
+  private createDrawLayer() {
     let drawLy;
     drawLy = new Layer('', 'Draw Layer', '', [], '', '', false);
     this.drawLayer = this.createEmptyVectorLayer();
     drawLy.olLayer = this.drawLayer;
     this.layers['Draw Layer'] = drawLy;
+  }
 
-    // picc wms
+  private createRouteCyclableLayer() {
+    let routeCyclable;
+
+    routeCyclable = new VectorLayer({
+      source: new VectorSource({
+        url: '../assets/data/Route_cyclable.json',
+        format: new GeoJSON()
+      })
+    });
+    let routeCyclableLayer;
+    routeCyclableLayer = new Layer('', 'Routes Cyclables', '', [], '', '', true);
+    routeCyclable.olLayer = routeCyclable;
+    routeCyclable.set('showInLayerManager', true);
+    routeCyclable.set('name', routeCyclableLayer.name);
+    this.layers.routeCcylable = routeCyclableLayer;
+    return routeCyclable;
+  }
+
+  private createProposalLayer() {
+    let proposalLayer;
+    proposalLayer = new Layer('', 'proposals', '', [], '', '', true);
+    proposalLayer.olLayer = this.createEmptyVectorLayer();
+    proposalLayer.olLayer.set('showInLayerManager', proposalLayer.showInLayerManager);
+    proposalLayer.olLayer.set('name', proposalLayer.name);
+    this.layers.proposals = proposalLayer;
+  }
+
+  private createPiccLayer() {
     const picLayer = new Layer('http://geoservices.wallonie.be/arcgis/services/TOPOGRAPHIE/PICC_VDIFF/MapServer/WMSServer?', 'Fond de plan PICC',
       '0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27',
       [30000.000000, 15000.000000, 310000.000000, 200000.000000], 'EPSG:3857', 'WMS', true);
@@ -44,28 +84,13 @@ export class LayerService {
     piccWms.set('showInLayerManager', true);
     picLayer.olLayer = piccWms;
     this.layers['Fond de plan PICC'] = picLayer;
-    map.addLayer(piccWms);
-    // proposal
-    let proposalLayer;
-    proposalLayer = new Layer('', 'proposals', '', [], '', '', true);
-    proposalLayer.olLayer = this.createEmptyVectorLayer();
-    proposalLayer.olLayer.set('showInLayerManager', proposalLayer.showInLayerManager);
-    proposalLayer.olLayer.set('name', proposalLayer.name);
-    this.layers.proposals = proposalLayer;
-    this.map.addLayer(this.layers.proposals.olLayer);
-    this.map.addLayer(this.drawLayer);
-
-    this.loadProposals();
-    return ;
+    return piccWms;
   }
 
   loadProposals() {
     this.dataService.loadProposals().subscribe(response => {
       this.dataService.proposals.forEach(proposal => {
-
-        const feature = new Feature({geometry: proposal.geometry});
-        feature.set('techId', proposal.id);
-        this.layers.proposals.olLayer.getSource().addFeature(feature);
+        this.layers.proposals.olLayer.getSource().addFeature(proposal.feature);
       });
     });
   }

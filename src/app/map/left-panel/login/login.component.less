@@ -1,0 +1,44 @@
+@import '../../../../css/constants';
+@import '../../../../css/xbrowser';
+
+h1.title {
+  font-size: 30px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: @secondary-grey-dark;
+  i {
+    color: @secondary-grey-light;
+  }
+  @media @screen-s {
+    font-size: 26px;
+  }
+}
+
+.sidenav-content {
+  color: @secondary-grey-dark;
+  position: relative;
+  overflow-y: hidden;
+  background-color: @theme-color-light;
+}
+
+.login-error {
+  text-align: right;
+  color: red;
+}
+
+.btn {
+  text-transform: uppercase;
+  width: 100%;
+
+  &.btn-primary,
+  &.btn-primary:hover{
+    background-color: @theme-color-dark;
+    border-color: @theme-color-dark;
+    color: @theme-color-light;
+  }
+  &.btn-outline-primary,
+  &.btn-outline-primary:hover{
+    color: @theme-color-dark;
+    border-color: @theme-color-dark;
+    background-color: @theme-color-light;
+  }
+}
