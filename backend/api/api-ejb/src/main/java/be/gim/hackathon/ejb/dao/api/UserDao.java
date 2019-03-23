@@ -13,5 +13,7 @@ import java.util.Optional;
 public interface UserDao {
   Optional<User> findById(Integer id);
 
+  Optional<User> findByLogin(String login);
+
   User insertOrUpdate(User toInsert);
 }

@@ -28,6 +28,15 @@ public class UserDaoImpl implements UserDao {
   }
 
   @Override
+  public Optional<User> findByLogin(String login) {
+    return entityManager.createNamedQuery(User.FIND_USER_BY_LOGIN_QUERY_NAME, User.class)
+      .setParameter(User.LOGIN_FIELD_NAME, login)
+      .getResultList()
+      .stream()
+      .findFirst();
+  }
+
+  @Override
   public User insertOrUpdate(User toInsert) {
     return entityManager.merge(toInsert);
   }

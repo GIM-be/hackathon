@@ -24,6 +24,11 @@ public class UserServiceImpl implements be.gim.hackathon.ejb.service.api.UserSer
   }
 
   @Override
+  public Optional<User> findByLogin(String login) {
+    return userDao.findByLogin(login);
+  }
+
+  @Override
   public User createUser(User user) {
     NotificationZone notificationZone = new NotificationZone();
     notificationZone.setName("notificationZone name");

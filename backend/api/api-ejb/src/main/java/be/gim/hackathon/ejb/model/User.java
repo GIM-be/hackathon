@@ -8,6 +8,7 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
@@ -21,10 +22,15 @@ import java.util.List;
  */
 @Entity
 @Table(name = "user")
-@NamedQuery(name = User.FIND_USER_BY_ID_QUERY_NAME, query = "SELECT u FROM User u WHERE u." + User.ID_FIELD_NAME + " = :id ")
+@NamedQueries({
+  @NamedQuery(name = User.FIND_USER_BY_ID_QUERY_NAME, query = "SELECT u FROM User u WHERE u.id = :" + User.ID_FIELD_NAME),
+  @NamedQuery(name = User.FIND_USER_BY_LOGIN_QUERY_NAME, query = "SELECT u FROM User u WHERE u.login = :" + User.LOGIN_FIELD_NAME)
+})
 public class User {
   public static final String FIND_USER_BY_ID_QUERY_NAME = "findUserById";
+  public static final String FIND_USER_BY_LOGIN_QUERY_NAME = "findLoginById";
   public static final String ID_FIELD_NAME = "id";
+  public static final String LOGIN_FIELD_NAME = "login";
 
   @Id
   @Column(name = "id")

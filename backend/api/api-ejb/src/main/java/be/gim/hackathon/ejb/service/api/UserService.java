@@ -13,6 +13,8 @@ public interface UserService {
 
   Optional<User> findById(Integer id);
 
+  Optional<User> findByLogin(String login);
+
   User createUser(User user);
 
   Optional<User> addNotificationZone(Integer id, NotificationZone notificationZone);
