@@ -24,13 +24,14 @@ export class SelectNotifZoneComponent implements OnInit {
 
   ngOnInit() {
     this.selectorName = "notifZoneSelector";
-    this.selector = this.interactionService.createSelectMultiInteraction(this.selectorName);
     this.vectorLayers = new VectorLayer({
       source: new VectorSource({
         url: '../assets/data/namur-limites-de-46-quartiers.geojson',
         format: new GeoJSON()
       })
     });
+    this.selector = this.interactionService.createSelectMultiInteraction(this.selectorName, this.vectorLayers);
+
     this.isSelecting = false;
   }
 
@@ -41,9 +42,6 @@ export class SelectNotifZoneComponent implements OnInit {
   }
 
   onSelectionEnd(canceled: boolean) {
-    this.isSelecting = false;
-    this.mapService.getMap().removeLayer(this.vectorLayers);
-    this.interactionService.toggleInteraction(this.selectorName);
 
     if(!canceled) {
       var notifZoneJson = {
@@ -52,9 +50,11 @@ export class SelectNotifZoneComponent implements OnInit {
       };
 
       var options = {headers: {'Content-Type': 'application/json'}};
-      this.http.post(`http://localhost:8080/hackathon/user/1/notificationZone/add`, notifZoneJson, options).subscribe(
+      this.http.post(`http://localhost:8080/hackathon/user/${this.userService.getuserId()}/notificationZone/add`, notifZoneJson, options).subscribe(
       response => {
-        console.log('success');
+        this.isSelecting = false;
+        this.mapService.getMap().removeLayer(this.vectorLayers);
+        this.interactionService.toggleInteraction(this.selectorName);
       }, error => {
         console.log('error');
       });

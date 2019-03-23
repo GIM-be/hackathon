@@ -6,6 +6,7 @@ import {LayerService} from './layer.service';
 import * as _ from 'lodash';
 import Select from 'ol/interaction/Select.js';
 import {click, shiftKeyOnly} from '../../../node_modules/ol/events/condition.js';
+import {Vector as VectorLayer} from 'ol/layer';
 
 
 @Injectable({
@@ -32,11 +33,14 @@ export class InteractionService {
     return draw;
   }
 
-  createSelectMultiInteraction(name: string) {
+  createSelectMultiInteraction(name: string, layer: VectorLayer) {
     let select;
     select = new Select({
       condition: click,
       toggleCondition: shiftKeyOnly,
+      layers: l => {
+        return l === layer;
+      }
     });
     this.interactions[name] = select;
     return select;
