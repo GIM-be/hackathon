@@ -8,9 +8,9 @@ export class QrcodeService {
   constructor() {
   }
 
-  generateQRCodeURL(content: string): string {
+  generateQRCodeURL(URL: string): string {
     var qr = qrcode(4, 'L');
-    qr.addData(content);
+    qr.addData(URL);
     qr.make();
     return qr.createDataURL(10, 5);
   }

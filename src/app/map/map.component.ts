@@ -21,9 +21,10 @@ export class MapComponent implements OnInit {
     this.mapService.initMap();
     this.wkt = new WKT();
     this.route.queryParams.subscribe(params => {
-      if(params.hasOwnProperty('proposition')) {
-        this.http.get(`http://localhost:8080/hackathon/proposal/${params['proposition']}`).subscribe(
+      if(params.hasOwnProperty('proposal')) {
+        this.http.get(`http://localhost:8080/hackathon/proposal/${params['proposal']}`).subscribe(
           (response: any) => {
+            console.log(response);
             if(response) {
               var center = extent.getCenter(this.wkt.readGeometry(response.geometry).getExtent());
               var map = this.mapService.getMap();
