@@ -15,6 +15,7 @@ import { ProposalModalComponent } from './proposal-modal/proposal-modal.componen
 import { ToolbarComponent } from './map/toolbar/toolbar.component';
 import { LoginComponent } from './map/left-panel/login/login.component';
 import { RouterModule, Routes } from '@angular/router';
+import { LoaderComponent } from './loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { RouterModule, Routes } from '@angular/router';
     ProposalModalComponent,
     ToolbarComponent,
     SelectNotifZoneComponent,
-    LoginComponent
+    LoginComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,

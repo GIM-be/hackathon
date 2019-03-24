@@ -17,6 +17,7 @@ import {Circle as CircleStyle, Text} from 'ol/style.js';
 import Fill from 'ol/style/Fill';
 import Point from 'ol/geom/Point';
 import * as Extent from 'ol/extent.js';
+import {AppLoaderService} from './app-loader.service';
 
 @Injectable({
   providedIn: 'root'
@@ -26,7 +27,9 @@ export class LayerService {
   layers: any = {};
   map: Map;
   drawLayer: VectorLayer;
-  constructor(private dataService: DataService, private styleService: StyleServiceService) {
+  constructor(private dataService: DataService,
+              private styleService: StyleServiceService,
+              private appLoaderService: AppLoaderService) {
   }
 
   createLayers(map: Map) {
@@ -121,6 +124,7 @@ export class LayerService {
         proposal.feature.set('type', proposal.type);
         this.layers.proposals.olLayer.getSource().addFeature(proposal.feature);
       });
+      this.appLoaderService.setLoaded();
     });
   }
 

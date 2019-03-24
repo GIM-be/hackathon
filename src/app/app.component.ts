@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {AppLoaderService} from './services/app-loader.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CitizenOfWallonia';
+
+  constructor(private appLoaderService: AppLoaderService) {}
+
+  isLoaded() {
+    return this.appLoaderService.isLoaded();
+  }
 }

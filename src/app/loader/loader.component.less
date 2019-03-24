@@ -1,0 +1,33 @@
+@import '../../css/constants';
+@import '../../css/xbrowser';
+
+#app-loader {
+  width: 100%;
+  margin: auto;
+  height: 75px;
+  clear: both;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+
+  .content {
+    display: table;
+    margin: auto;
+
+    .triplet {
+      position: relative;
+      top: 0;
+      width: 30px;
+      height: 75px;
+      float: left;
+
+      .dot {
+        width: 5px;
+        height: 5px;
+        border-radius: 999px;
+        float: left;
+        margin: 10px;
+      }
+    }
+  }
+}

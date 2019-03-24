@@ -1,2 +1,6 @@
-<app-map></app-map>
-
+<div *ngIf="!isLoaded()">
+  <app-loader></app-loader>
+</div>
+<div *ngIf="isLoaded()">
+  <app-map></app-map>
+</div>
