@@ -1,0 +1,2286 @@
+{
+	"type" : "FeatureCollection",
+	"name" : "sample_propositions",
+	"features" : [
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.9333731014, 50.4983347739 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "1"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8083990467, 50.4596367323 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "5"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.9252967824, 50.4210861851 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "6"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8609164332, 50.4772216368 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "9"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8587830427, 50.4795105733 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "10"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8644556143, 50.4794104906 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "11"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.734405832, 50.4713853555 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "12"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.9459795259, 50.4156337484 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "13"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.926405865, 50.4476553475 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "14"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.9292769568, 50.4536660273 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "15"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8767352447, 50.5157342321 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "16"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8714877547, 50.4708839282 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "18"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.9721981682, 50.4789712579 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "19"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.9331303189, 50.4948383208 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "20"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8117430228, 50.4266971687 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "21"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.9712402371, 50.4915916928 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "23"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8958870503, 50.4682810006 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "25"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.857059224, 50.480308161 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "27"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8980087909, 50.4641926345 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "28"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.829425279, 50.4674192641 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "30"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8349892954, 50.450426444 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "31"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.7956323001, 50.4793752689 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "32"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8727264792, 50.4611367998 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "34"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8997520451, 50.4985090594 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "36"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8772313893, 50.4995756406 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "37"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8714900569, 50.50360321 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "39"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.9498157013, 50.4644456566 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "40"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.9176778783, 50.4200405761 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "41"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.9243763545, 50.4663501745 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "44"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.9539986663, 50.5050467294 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "45"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8559848706, 50.4698713897 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "46"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8151428443, 50.4704024507 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "53"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8552170863, 50.4733422648 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "54"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8603476201, 50.4698999498 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "55"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8600544983, 50.4717801082 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "56"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8716891291, 50.4874053653 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "57"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8578335444, 50.4863657481 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "63"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8576048309, 50.4852481244 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "64"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.849172402, 50.4645564746 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "67"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8777176596, 50.4750218069 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "68"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.9539369792, 50.5097030053 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "70"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.9458897566, 50.5126794385 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "71"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.7969053252, 50.4445851732 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "73"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.7997338572, 50.4402182435 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "74"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8442339027, 50.4562684487 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "75"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8654693514, 50.4415171246 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "78"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.866165187, 50.4225509719 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "80"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8637795079, 50.4289424966 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "81"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8688833809, 50.4243500765 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "83"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.9180272723, 50.4266896699 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "84"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.9227835817, 50.4120308715 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "85"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8050366725, 50.4846023247 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "87"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8047435909, 50.4833240459 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "88"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8004571803, 50.4849778011 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "91"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8660531119, 50.4569818475 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "92"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8548033625, 50.4746083949 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "96"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8773726498, 50.4822970171 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "97"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8781387235, 50.4812941469 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "98"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8626657337, 50.4628028412 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "101"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8790241428, 50.4730276702 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "102"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8351459835, 50.4708437393 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "104"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8979780075, 50.516956626 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "106"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8472167691, 50.4207284492 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "107"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8486634501, 50.4736390917 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "109"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8913878257, 50.4988909326 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "110"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.9119387466, 50.5003499748 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "111"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8560413158, 50.4455676874 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "112"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8630158534, 50.4963152467 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "114"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8471687159, 50.4759578917 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "116"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8701497704, 50.4679577302 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "119"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8602788345, 50.4616718441 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "121"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.9537936015, 50.4464741717 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "122"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8543300684, 50.4667276963 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "124"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.9061379551, 50.4567348543 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "127"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.830690118, 50.4716502222 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "129"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8854457955, 50.4143877583 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "131"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8896893938, 50.4159607985 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "132"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8879747237, 50.4170344487 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "133"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8965916047, 50.4147069784 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "135"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8611084314, 50.4373806773 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "136"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8664856089, 50.4362345705 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "137"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.7921043501, 50.4506927909 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "140"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8328423616, 50.471239259 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "142"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8307410884, 50.4716606791 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "145"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8569982244, 50.467795688 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "147"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.9051735589, 50.5257099546 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "148"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.7888449167, 50.4597089868 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "149"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.7967340627, 50.4576572676 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "150"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8848971245, 50.5074379234 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "151"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.9044847851, 50.5142166545 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bench",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "152"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8447616443, 50.4744811397 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "4"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8618463093, 50.4758855396 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "8"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8737072101, 50.5029387898 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "22"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.972864032, 50.4927283975 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "24"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.9434184816, 50.5035567157 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "26"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.849643217, 50.4860781929 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "29"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8731386405, 50.4607518573 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "33"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.902146199, 50.4942119384 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "35"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.924678628, 50.4287803787 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "42"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.9168055953, 50.4296558637 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "47"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8916268253, 50.4644710836 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "48"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.894574724, 50.4690158834 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "49"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8429866714, 50.4596402432 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "50"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8853314137, 50.4443323226 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "51"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.7979659141, 50.4150554973 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "52"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8133423496, 50.4379980956 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "58"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8028763105, 50.4880037854 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "59"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8983275588, 50.4644632173 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "60"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8570870597, 50.4844973983 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "61"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8561862795, 50.429212928 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "82"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.7982679178, 50.4616932288 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "86"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.9045639853, 50.4473196439 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "90"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8228122941, 50.4241016141 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "93"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8581484143, 50.452089688 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "94"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.853268172, 50.4663415578 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "95"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8444831445, 50.4663844846 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "99"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8358609082, 50.4708652294 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "103"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8343730427, 50.4708690661 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "105"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.9479476491, 50.476664022 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "108"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8778240891, 50.5173620751 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "113"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.874025249, 50.4635764117 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "117"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8601362099, 50.4614903041 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "120"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8555840948, 50.4650684819 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "123"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.9085337336, 50.4580413711 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "125"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8684445045, 50.4374648259 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "130"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8957290671, 50.4146843041 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "134"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8892506894, 50.5079695513 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "138"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8074157128, 50.4727913241 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "139"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.83336697, 50.4710519192 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "141"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8326506205, 50.4712775673 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "bulles_verre",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "143"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8700229751, 50.4769958891 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "plaine_jeux",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "2"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8445475622, 50.4743782211 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "plaine_jeux",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "3"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8617130327, 50.4758263123 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "plaine_jeux",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "7"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.9032595122, 50.4733581256 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "plaine_jeux",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "17"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.877187414, 50.4997034005 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "plaine_jeux",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "38"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8518921676, 50.4351072971 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "plaine_jeux",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "43"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8578418439, 50.4854298409 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "plaine_jeux",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "62"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8491261078, 50.4860068163 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "plaine_jeux",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "65"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.907129007, 50.5146225674 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "plaine_jeux",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "66"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8733610932, 50.4759232133 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "plaine_jeux",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "69"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8650721626, 50.4292619486 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "plaine_jeux",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "72"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8842354265, 50.4193569872 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "plaine_jeux",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "76"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8662381792, 50.4414685719 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "plaine_jeux",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "77"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8590107439, 50.444284841 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "plaine_jeux",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "79"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8438815713, 50.4560386692 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "plaine_jeux",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "89"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.9302253651, 50.4199268886 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "plaine_jeux",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "100"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.789718323, 50.4610930137 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "plaine_jeux",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "115"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8735294521, 50.464192234 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "plaine_jeux",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "118"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8541431239, 50.4665893414 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "plaine_jeux",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "126"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.830299684, 50.4717518827 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "plaine_jeux",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "128"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.8318452233, 50.4716395833 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "plaine_jeux",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "144"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 4.7963758372, 50.4639727178 ]
+			},
+			"properties" : {
+				"name" : "nameTest",
+				"description" : "Je trouverai des langages pour chanter tes louanges\nJe ferai nos bagages pour d'infinies vendanges\nLes formules magiques des marabouts d'Afrique\nJe les dirai sans remords pour que tu m'aimes encore",
+				"type" : "plaine_jeux",
+				"positiveCount" : "0",
+				"negativeCount" : "0",
+				"ID" : "146"
+			}
+		}
+	]
+}

@@ -13,6 +13,7 @@ import GeoJSON from 'ol/format/GeoJSON';
 import {bbox as bboxStrategy} from 'ol/loadingstrategy.js';
 import {DataService} from './data.service';
 import Feature from 'ol/Feature.js';
+import {StyleServiceService} from "./style-service.service";
 
 @Injectable({
   providedIn: 'root'
@@ -22,7 +23,7 @@ export class LayerService {
   layers: any = {};
   map: Map;
   drawLayer: VectorLayer;
-  constructor(private dataService: DataService) {
+  constructor(private dataService: DataService, private styleService: StyleServiceService) {
   }
 
   createLayers(map: Map) {
@@ -31,8 +32,10 @@ export class LayerService {
     const piccWms = this.createPiccLayer();
     this.createProposalLayer();
     const routeCyclable = this.createRouteCyclableLayer();
+    //const sampleProposal = this.createSampleProposaLayer();
     this.map.addLayer(piccWms);
     this.map.addLayer(routeCyclable);
+    //this.map.addLayer(sampleProposal);
     this.map.addLayer(this.layers.proposals.olLayer);
     this.map.addLayer(this.drawLayer);
 
@@ -52,6 +55,7 @@ export class LayerService {
     let routeCyclable;
 
     routeCyclable = new VectorLayer({
+      style: this.styleService.styles.roads,
       source: new VectorSource({
         url: '../assets/data/Route_cyclable.json',
         format: new GeoJSON()
@@ -69,7 +73,13 @@ export class LayerService {
   private createProposalLayer() {
     let proposalLayer;
     proposalLayer = new Layer('', 'proposals', '', [], '', '', true);
-    proposalLayer.olLayer = this.createEmptyVectorLayer();
+    proposalLayer.olLayer = new VectorLayer({
+      style: this.styleService.styles.proposal,
+      source: new VectorSource({
+        url: '../assets/data/sample_propositions.json',
+        format: new GeoJSON()
+      })
+    });
     proposalLayer.olLayer.set('showInLayerManager', proposalLayer.showInLayerManager);
     proposalLayer.olLayer.set('name', proposalLayer.name);
     this.layers.proposals = proposalLayer;
@@ -151,4 +161,22 @@ export class LayerService {
     return vector;
   }
 
+  private createSampleProposaLayer() {
+    let sampleProposal;
+
+    sampleProposal = new VectorLayer({
+      style: this.styleService.styles.proposal,
+      source: new VectorSource({
+        url: '../assets/data/sample_propositions.json',
+        format: new GeoJSON()
+      })
+    });
+    let sampleProposalLAyer;
+    sampleProposalLAyer = new Layer('', 'Propositions existantes', '', [], '', '', true);
+    sampleProposalLAyer.olLayer = sampleProposal;
+    sampleProposal.set('showInLayerManager', true);
+    sampleProposal.set('name', sampleProposalLAyer.name);
+    this.layers.sampleProposal = sampleProposalLAyer;
+    return sampleProposal;
+  }
 }
