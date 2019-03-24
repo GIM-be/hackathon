@@ -1,22 +1,24 @@
-<ul class="nav nav-pills list-inline" *ngIf="userService.getLogged()">
-  <li class="nav-item" (click)="onSelectionStart(); p2.open()"
-    ngbTooltip="Mes alertes" placement="right" [openDelay]="200" [closeDelay]="200" tooltipClass="action-tooltip">
-  <a class="interaction-item nav-link" [ngClass]="{'active': false}"><i class="d-block far fa-bell"></i></a>
-  </li>
-  <li style="visibility: hidden"
-      [ngbPopover]="askConfirmationMyAlerts" placement="right" [autoClose]="false" triggers="manual" #p2="ngbPopover" popoverClass="shift-popover-left">
-  </li>
-</ul>
-
-<ng-template #askConfirmationMyAlerts>
+<div *ngIf="userService.getLogged()">
   <ul class="nav nav-pills list-inline">
-    <li class="nav-item" (click)="onSelectionEnd(false)"
-        ngbTooltip="Terminer l'action" placement="right" [openDelay]="200" [closeDelay]="200" container="body" tooltipClass="action-tooltip">
-      <a class="interaction-item pop nav-link"><i class="d-block fa fa-check"></i></a>
+    <li class="nav-item" (click)="onSelectionStart(); p2.open()"
+        ngbTooltip="Mes alertes" placement="right" [openDelay]="200" [closeDelay]="200" tooltipClass="action-tooltip">
+      <a class="interaction-item nav-link" [ngClass]="{'active': false}"><i class="d-block far fa-bell"></i></a>
     </li>
-    <li class="nav-item" (click)="onSelectionEnd(true); p2.close()"
-        ngbTooltip="Annuler l'action" placement="right" [openDelay]="200" [closeDelay]="200" container="body" tooltipClass="action-tooltip">
-      <a class="interaction-item pop nav-link"><i class="d-block fa fa-times"></i></a>
+    <li style="visibility: hidden"
+        [ngbPopover]="askConfirmationMyAlerts" placement="right" [autoClose]="false" triggers="manual" #p2="ngbPopover" popoverClass="shift-popover-left">
     </li>
   </ul>
-</ng-template>
+
+  <ng-template #askConfirmationMyAlerts>
+    <ul class="nav nav-pills list-inline">
+      <li class="nav-item" (click)="onSelectionEnd(false)"
+          ngbTooltip="Terminer l'action" placement="right" [openDelay]="200" [closeDelay]="200" container="body" tooltipClass="action-tooltip">
+        <a class="interaction-item pop nav-link"><i class="d-block fa fa-check"></i></a>
+      </li>
+      <li class="nav-item" (click)="onSelectionEnd(true); p2.close()"
+          ngbTooltip="Annuler l'action" placement="right" [openDelay]="200" [closeDelay]="200" container="body" tooltipClass="action-tooltip">
+        <a class="interaction-item pop nav-link"><i class="d-block fa fa-times"></i></a>
+      </li>
+    </ul>
+  </ng-template>
+</div>
