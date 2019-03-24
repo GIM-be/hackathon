@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {InteractionService} from '../services/interaction.service';
 import {Proposition} from '../classes/proposition';
-import {DataService} from "../services/data.service";
+import {DataService} from '../services/data.service';
+import {QrcodeService} from '../services/qrcode.service';
 
 @Component({
   selector: 'app-proposal-modal',
@@ -11,7 +12,7 @@ import {DataService} from "../services/data.service";
 export class ProposalModalComponent implements OnInit {
   proposal: Proposition;
 
-  constructor(private interactionService: InteractionService, private dataService: DataService) { }
+  constructor(private interactionService: InteractionService, private dataService: DataService, private qrCodeService: QrcodeService) { }
 
   ngOnInit() {
   }
@@ -27,19 +28,23 @@ export class ProposalModalComponent implements OnInit {
     this.interactionService.deselectProposal();
   }
 
-  getPositiveCount(){
+  getPositiveCount() {
     return this.proposal.positiveCount;
   }
 
-  upvote(){
-    this.dataService.upvote(this.proposal).subscribe(proposal =>{
+  upvote() {
+    this.dataService.upvote(this.proposal).subscribe(proposal => {
       this.proposal.positiveCount = proposal.positiveCount;
     });
   }
 
-  downvote(){
-    this.dataService.downvote(this.proposal).subscribe(proposal =>{
+  downvote() {
+    this.dataService.downvote(this.proposal).subscribe(proposal => {
       this.proposal.negativeCount = proposal.negativeCount;
     });
+  }
+
+  getQrCode() {
+    return this.qrCodeService.generateQRCodeURL('http://localhost:4200?proposal=' + this.proposal.id);
   }
 }
