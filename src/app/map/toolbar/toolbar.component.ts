@@ -59,7 +59,10 @@ export class ToolbarComponent implements OnInit {
   }
 
   cancelInteractionAction() {
-    this.interactionService.confirmBeformAction.cancel();
+    if(this.interactionService.confirmBeformAction){
+      this.interactionService.confirmBeformAction.cancel();
+    }
+    this.interactionService.toggleInteraction('selectRoad');
   }
 
 }
