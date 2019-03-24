@@ -34,7 +34,7 @@
 
   <ng-template #askConfirmationDrawLine>
     <ul class="nav nav-pills list-inline">
-      <li class="nav-item" (click)="confirmInteractionAction()"
+      <li class="nav-item" (click)="confirmInteractionAction(); p1.close()"
           ngbTooltip="Terminer l'action" placement="right" [openDelay]="200" [closeDelay]="200" container="body" tooltipClass="action-tooltip">
         <a class="interaction-item pop nav-link"><i class="d-block fa fa-check"></i></a>
       </li>

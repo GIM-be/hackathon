@@ -3,28 +3,30 @@
     <div class="modal-closer" (click)="deselectProposal()">
       <a class="float-right"><i class="fa fa-times" ></i></a>
     </div>
-    <div class="modal-data row">
+    <div class="modal-data row" style="margin-bottom: 15px;">
       <div class="p-3 mx-auto col-md-12 col-12" >
         <h3 class="display-3" [textContent]="proposal.name"></h3>
+      </div>
+      <div class="col-8">
         <p class="mb-4" [textContent]="proposal.description"></p>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-4"></div>
       <div class="col-4">
         <img class="img-fluid" [src]="getQrCode()"/>
       </div>
-      <div class="col-4"></div>
-    </div>
-    <div class="row">
-      <div class="col-12 text-center"><h3 class="text-dark">Vous voulez soutenir la proposition? Votez!</h3></div>
     </div>
     <div class="modal-action row">
-      <div class="col-6">
-        <a class="btn btn-outline-light btn-block text-success" contenteditable="true" (click)="upvote()">{{getPositiveCount()}}&nbsp;<i class="fa fa-thumbs-up fa-fw fa-1x py-1 text-success" ></i></a>
+      <div class="col-12 text-center modal-vote">
+        <h5 class="text-dark">Voulez-vous soutenir cette proposition? Votez!</h5>
       </div>
       <div class="col-6">
-        <a class="btn btn-outline-light btn-block text-danger" contenteditable="true" (click)="downvote()"><i class="fa fa-thumbs-down fa-fw fa-1x py-1 text-danger" ></i>&nbsp;{{proposal.negativeCount}}</a>
+        <a class="btn btn-outline-light btn-block text-success" contenteditable="true" (click)="upvote()">
+          <span [textContent]="proposal.positiveCount"></span>&nbsp;<i class="fa fa-thumbs-up fa-fw fa-1x py-1 text-success" ></i>
+        </a>
+      </div>
+      <div class="col-6">
+        <a class="btn btn-outline-light btn-block text-danger" contenteditable="true" (click)="downvote()">
+          <i class="fa fa-thumbs-down fa-fw fa-1x py-1 text-danger" ></i>&nbsp;<span [textContent]="proposal.negativeCount"></span>
+        </a>
       </div>
     </div>
   </div>

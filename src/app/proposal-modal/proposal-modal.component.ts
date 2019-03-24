@@ -28,10 +28,6 @@ export class ProposalModalComponent implements OnInit {
     this.interactionService.deselectProposal();
   }
 
-  getPositiveCount() {
-    return this.proposal.positiveCount;
-  }
-
   upvote() {
     this.dataService.upvote(this.proposal).subscribe(proposal => {
       this.proposal.positiveCount = proposal.positiveCount;
