@@ -274,23 +274,37 @@ export class LayerService {
       source: clusterSource,
       style: (feature) => {
         const size = feature.get('features').length;
-        const style = new Style({
+
+        const style =  [new Style({
           image: new CircleStyle({
-            radius: 10,
+            radius: 15,
             stroke: new Stroke({
-              color: '#fff'
+              color: [0, 0, 0, 0],
+              width: 0
             }),
             fill: new Fill({
-              color: '#3399CC'
+              color: [14, 131, 230, 1]
+            })
+          })
+        }), new Style({
+          image: new CircleStyle({
+            radius: 12,
+            stroke: new Stroke({
+              color: '#fff',
+              width: 1
+            }),
+            fill: new Fill({
+              color: [21, 70, 91, 1]
             })
           }),
           text: new Text({
+            font: '11px sans-serif',
             text: size.toString(),
             fill: new Fill({
               color: '#fff'
             })
           })
-        });
+        })];
 
         return style;
       }
