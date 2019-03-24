@@ -24,7 +24,8 @@ export class RightPanelComponent implements OnInit {
     this.openRightPanel = !this.openRightPanel;
   }
 
-  getNbLayersInLayerManager() {
+  getNbLayersInLayerManager(): number {
+    console.log(this.mapService.getLayersInLayerManager().getLength());
     return this.mapService.getLayersInLayerManager().getLength();
   }
 

@@ -20,7 +20,7 @@ export class SelectNotifZoneComponent implements OnInit {
   vectorLayers: VectorLayer;
   isSelecting: boolean;
 
-  constructor(private interactionService: InteractionService, private mapService: MapService, private http: HttpClient, private userService: UserService) {}
+  constructor(private interactionService: InteractionService, private mapService: MapService, private http: HttpClient, public userService: UserService) {}
 
   ngOnInit() {
     this.selectorName = "notifZoneSelector";

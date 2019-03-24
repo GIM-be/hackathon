@@ -11,7 +11,7 @@ export class LoginComponent implements OnInit {
   userEmail = '';
   error: string;
 
-  constructor(private userService: UserService) {  }
+  constructor(public userService: UserService) {  }
 
   ngOnInit() {}
 

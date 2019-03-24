@@ -77,3 +77,4 @@ geoserver/overlays/*
 .recommenders
 .sonarlint
 package-lock.json
+dist
