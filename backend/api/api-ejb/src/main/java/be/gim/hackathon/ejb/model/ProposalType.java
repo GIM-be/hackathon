@@ -10,7 +10,9 @@ public enum ProposalType {
   TRASH_BIN("Poubelle"),
   CROSSWALK("Passage piétons"),
   BICYCLE_PARKING("Parking vélo"),
-  BICYCLE_LANE("Piste cyclable")
+  BICYCLE_LANE("Piste cyclable"),
+  PLAYGROUND("Plaine de jeux"),
+  GLASS_BUBBLE("Bulle à verre")
   ;
 
   private String label;
