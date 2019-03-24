@@ -9,15 +9,16 @@
         <p class="mb-4" [textContent]="proposal.description"></p>
       </div>
     </div>
+    <div class="row">
+      <div class="col-12"><h3 class="text-dark">Vous voulez soutenir la proposition? Votez!</h3></div>
+    </div>
     <div class="modal-action row">
-      <div class="col-4"></div>
-      <div class="col-2">
-        <a class="btn btn-outline-light" contenteditable="true"><i class="fa fa-thumbs-up fa-fw fa-1x py-1" ></i></a>
+      <div class="col-6">
+        <a class="btn btn-outline-light btn-block text-success" contenteditable="true" (click)="upvote()">{{getPositiveCount()}}&nbsp;<i class="fa fa-thumbs-up fa-fw fa-1x py-1 text-success" ></i></a>
       </div>
-      <div class="col-2">
-        <a class="btn btn-outline-light" contenteditable="true"><i class="fa fa-thumbs-down fa-fw fa-1x py-1" ></i></a>
+      <div class="col-6">
+        <a class="btn btn-outline-light btn-block text-danger" contenteditable="true" (click)="downvote()"><i class="fa fa-thumbs-down fa-fw fa-1x py-1 text-danger" ></i>&nbsp;{{proposal.negativeCount}}</a>
       </div>
-      <div class="col-4"></div>
     </div>
   </div>
 </div>

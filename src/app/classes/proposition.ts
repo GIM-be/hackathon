@@ -3,6 +3,9 @@ export class Proposition {
   feature: any;
   name: string;
   description: string;
+  type: string;
+  negativeCount: number;
+  positiveCount: number;
 
   removeData() {
     this.id = null;

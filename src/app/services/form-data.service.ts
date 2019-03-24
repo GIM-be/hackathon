@@ -33,6 +33,7 @@ export class FormDataService {
     propositionJson.geometry = geoJsonFormatter.writeGeometry(proposition.feature.getGeometry());
     propositionJson.name = proposition.name;
     propositionJson.description = proposition.description;
+    propositionJson.type = proposition.type;
 
     const options = {headers: {'Content-Type': 'application/json'}};
     return this.http.post('http://localhost:8080/hackathon/proposal/isRelevant', propositionJson, options).subscribe(
@@ -42,6 +43,10 @@ export class FormDataService {
           console.log('success');
           let newPropo;
           newPropo = new Proposition(response.id, new Feature({geometry: geoJsonFormatter.readGeometry(response.geometry), techId: response.id}), response.name, response.description);
+          newPropo.type = response.type;
+          newPropo.positiveCount = response.positiveCount;
+          newPropo.negativeCount = response.negativeCount;
+          newPropo.feature.set('type', newPropo.type);
           this.layerService.layers.proposals.olLayer.getSource().removeFeature(this.formDataToTreat.feature);
           this.layerService.layers.proposals.olLayer.getSource().addFeature(newPropo.feature);
           this.dataService.proposals.push(newPropo);

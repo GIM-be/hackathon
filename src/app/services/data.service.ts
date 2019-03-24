@@ -23,11 +23,23 @@ export class DataService {
     return this.http.get<any>('http://localhost:8080/hackathon/proposal/all').pipe(
       tap(response => {
         response.forEach(proposal => {
+          const newPropo = new Proposition(proposal.id, new Feature({geometry: this.wktParser.readGeometry(proposal.geometry), techId: proposal.id}), proposal.name, proposal.description);
+          newPropo.type = proposal.type;
+          newPropo.positiveCount = proposal.positiveCount ? proposal.positiveCount : 0;
+          newPropo.negativeCount = proposal.negativeCount ? proposal.negativeCount : 0;
           this.proposals.push(
-            new Proposition(proposal.id, new Feature({geometry: this.wktParser.readGeometry(proposal.geometry), techId: proposal.id}), proposal.name, proposal.description)
+            newPropo
           );
         });
       })
     );
+  }
+
+  upvote(proposition: Proposition) {
+    return this.http.post<any>('http://localhost:8080/hackathon/proposal/' + proposition.id + '/positiveVote', {});
+  }
+
+  downvote(proposition: Proposition) {
+    return this.http.post<any>('http://localhost:8080/hackathon/proposal/' + proposition.id + '/negativeVote', {});
   }
 }
