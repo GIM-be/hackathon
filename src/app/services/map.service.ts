@@ -45,8 +45,16 @@ export class MapService {
       })
     });
     this.map.getView().fit(wallExtent);
-
     this.layerService.createLayers(this.map);
+
+    // pointer on hovered features
+    this.map.on('pointermove', (e: any) => {
+      const pixel = this.map.getEventPixel(e.originalEvent);
+      const features = this.map.getFeaturesAtPixel(pixel, { hitTolerance: 5 , layerFilter: layer => {
+          return layer === this.layerService.layers.proposals.olLayer;
+        }});
+      this.map.getViewport()['style'].cursor = features ? 'pointer' : '';
+    });
     this.interactionService.init(this.map);
   }
 

@@ -16,6 +16,16 @@
       </p>
     </div>
   </div>
+  <div class="container" *ngIf="!relevant">
+    <div class="row">
+      <div class="col-12 text-warning">
+        <i class="fa fa-2x fa-exclamation-mark text-warning" ></i> ATTENTION : Il y a déjà beaucoup de parking à vélo a proximité.
+      </div>
+    </div>
+    <div class="row">
+
+    </div>
+  </div>
 
   <div class="container">
     <div class="row">
@@ -29,7 +39,7 @@
                         ngbDropdownToggle>{{types[formDataToTreat.type]}}</button>
                 <div ngbDropdownMenu aria-labelledby="dropdownConfig">
                   <button class="btn-block" ngbDropdownItem *ngFor="let type of getTypes()"
-                          (click)="formDataToTreat.type = type">{{types[type]}}</button>
+                          (click)="changeType(type)">{{types[type]}}</button>
                 </div>
               </div>
             </div>

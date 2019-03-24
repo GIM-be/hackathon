@@ -29,11 +29,7 @@ export class FormDataService {
     proposition = proposition ? proposition : this.formDataToTreat;
 
     const geoJsonFormatter = new WKT();
-    const propositionJson: any = {};
-    propositionJson.geometry = geoJsonFormatter.writeGeometry(proposition.feature.getGeometry());
-    propositionJson.name = proposition.name;
-    propositionJson.description = proposition.description;
-    propositionJson.type = proposition.type;
+    const propositionJson = this.preparePropositionForBackend(geoJsonFormatter, proposition);
 
     const options = {headers: {'Content-Type': 'application/json'}};
     return this.http.post('http://localhost:8080/hackathon/proposal/isRelevant', propositionJson, options).subscribe(
@@ -59,6 +55,24 @@ export class FormDataService {
       })
     );
 
+  }
+
+  private preparePropositionForBackend(geoJsonFormatter, proposition: Proposition) {
+    const propositionJson: any = {};
+    propositionJson.geometry = geoJsonFormatter.writeGeometry(proposition.feature.getGeometry());
+    propositionJson.name = proposition.name;
+    propositionJson.description = proposition.description;
+    propositionJson.type = proposition.type;
+    return propositionJson;
+  }
+
+  checkIfPropositionRelevant(proposition?: Proposition){
+    proposition = proposition ? proposition : this.formDataToTreat;
+
+    const geoJsonFormatter = new WKT();
+    const propositionJson = this.preparePropositionForBackend(geoJsonFormatter, proposition);
+    const options = {headers: {'Content-Type': 'application/json'}};
+    return this.http.post('http://localhost:8080/hackathon/proposal/isRelevant', propositionJson, options)
   }
 
   getFormDataToTreat() {

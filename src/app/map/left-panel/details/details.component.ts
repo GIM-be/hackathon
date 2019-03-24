@@ -17,12 +17,14 @@ export class DetailsComponent implements OnInit {
   CROSSWALK: 'Passage piétons',
   BICYCLE_PARKING: 'Parking vélo',
   BICYCLE_LANE: 'Piste cyclable'};
+  relevant = true;
 
   constructor(private formDataService: FormDataService) { }
 
   ngOnInit() {
     this.formDataToTreat = this.formDataService.getFormDataToTreat();
     this.formDataToTreat.type = 'BENCH';
+    this.checkIfPropositionRelevant();
   }
 
   submitProposition() {
@@ -35,5 +37,16 @@ export class DetailsComponent implements OnInit {
 
   getTypes() {
     return _.keys(this.types);
+  }
+
+  checkIfPropositionRelevant() {
+    this.formDataService.checkIfPropositionRelevant(this.formDataToTreat).subscribe((response: boolean) => {
+      this.relevant = response;
+    });
+  }
+
+  changeType(type) {
+    this.formDataToTreat.type = type;
+    this.checkIfPropositionRelevant();
   }
 }
