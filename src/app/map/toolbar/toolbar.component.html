@@ -34,11 +34,11 @@
 
   <ng-template #askConfirmationDrawLine>
     <ul class="nav nav-pills list-inline">
-      <li class="nav-item" (click)="confirmInteractionAction(); p1.close()"
+      <li class="nav-item" (click)="p1.close(); confirmInteractionAction()"
           ngbTooltip="Terminer l'action" placement="right" [openDelay]="200" [closeDelay]="200" container="body" tooltipClass="action-tooltip">
         <a class="interaction-item pop nav-link"><i class="d-block fa fa-check"></i></a>
       </li>
-      <li class="nav-item" (click)="cancelInteractionAction(); p1.close()"
+      <li class="nav-item" (click)="p1.close(); cancelInteractionAction()"
           ngbTooltip="Annuler l'action" placement="right" [openDelay]="200" [closeDelay]="200" container="body" tooltipClass="action-tooltip">
         <a class="interaction-item pop nav-link"><i class="d-block fa fa-times"></i></a>
       </li>

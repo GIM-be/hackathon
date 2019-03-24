@@ -11,11 +11,11 @@
 
   <ng-template #askConfirmationMyAlerts>
     <ul class="nav nav-pills list-inline">
-      <li class="nav-item" (click)="onSelectionEnd(false); p2.close()"
+      <li class="nav-item" (click)="p2.close(); onSelectionEnd(false)"
           ngbTooltip="Terminer l'action" placement="right" [openDelay]="200" [closeDelay]="200" container="body" tooltipClass="action-tooltip">
         <a class="interaction-item pop nav-link"><i class="d-block fa fa-check"></i></a>
       </li>
-      <li class="nav-item" (click)="onSelectionEnd(true); p2.close()"
+      <li class="nav-item" (click)="p2.close(); onSelectionEnd(true)"
           ngbTooltip="Annuler l'action" placement="right" [openDelay]="200" [closeDelay]="200" container="body" tooltipClass="action-tooltip">
         <a class="interaction-item pop nav-link"><i class="d-block fa fa-times"></i></a>
       </li>
