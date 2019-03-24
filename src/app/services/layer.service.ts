@@ -78,10 +78,10 @@ export class LayerService {
 
   private createProposalLayer() {
     let proposalLayer;
-    proposalLayer = new Layer('', 'proposals', '', [], '', '', true);
+    proposalLayer = new Layer('', 'Propositions', '', [], '', '', true);
     const source = new VectorSource({
-      url: '../assets/data/sample_propositions.json',
-      format: new GeoJSON()
+      // url: '../assets/data/sample_propositions.json',
+      // format: new GeoJSON()
     });
     proposalLayer.olLayer = new VectorLayer({
       style: this.styleService.styles.proposal,
@@ -91,15 +91,15 @@ export class LayerService {
     proposalLayer.olLayer.set('name', proposalLayer.name);
     proposalLayer.olLayer.setMaxResolution(3);
     this.layers.proposals = proposalLayer;
-    source.on('addfeature', e => {
-      if (e.feature.get('ID')) {
-        e.feature.set('techId', e.feature.get('ID'));
-        e.feature.set('id', e.feature.get('ID'));
-        if (!this.layers.proposals.olLayer.getSource().getFeatureById(e.feature.get('ID'))) {
-          this.dataService.proposals.push(new Proposition(e.feature.get('ID'), e.feature, e.feature.get('name'), e.feature.get('description')));
-        }
-      }
-    });
+    // source.on('addfeature', e => {
+    //   if (e.feature.get('ID')) {
+    //     e.feature.set('techId', e.feature.get('ID'));
+    //     e.feature.set('id', e.feature.get('ID'));
+    //     if (!this.layers.proposals.olLayer.getSource().getFeatureById(e.feature.get('ID'))) {
+    //       this.dataService.proposals.push(new Proposition(e.feature.get('ID'), e.feature, e.feature.get('name'), e.feature.get('description')));
+    //     }
+    //   }
+    // });
   }
 
   private createPiccLayer() {
