@@ -54,4 +54,12 @@ export class ToolbarComponent implements OnInit {
     this.loginService.toggleLoginForm();
   }
 
+  confirmInteractionAction() {
+    this.interactionService.confirmBeformAction.ok();
+  }
+
+  cancelInteractionAction() {
+    this.interactionService.confirmBeformAction.cancel();
+  }
+
 }

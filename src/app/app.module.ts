@@ -14,7 +14,6 @@ import { SelectNotifZoneComponent } from './map/right-panel/select-notif-zone/se
 import { ProposalModalComponent } from './proposal-modal/proposal-modal.component';
 import { ToolbarComponent } from './map/toolbar/toolbar.component';
 import { LoginComponent } from './map/left-panel/login/login.component';
-import { ConfirmPanelComponent } from './confirm-panel/confirm-panel.component';
 import { RouterModule, Routes } from '@angular/router';
 
 @NgModule({
@@ -29,8 +28,7 @@ import { RouterModule, Routes } from '@angular/router';
     ProposalModalComponent,
     ToolbarComponent,
     SelectNotifZoneComponent,
-    LoginComponent,
-    ConfirmPanelComponent
+    LoginComponent
   ],
   imports: [
     BrowserModule,

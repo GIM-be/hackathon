@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import Select from 'ol/interaction/Select.js';
-import {InteractionService} from "../../../services/interaction.service";
-import {MapService} from "../../../services/map.service";
+import {InteractionService} from '../../../services/interaction.service';
+import {MapService} from '../../../services/map.service';
 import {Vector as VectorSource} from 'ol/source';
 import {Vector as VectorLayer} from 'ol/layer';
 import GeoJSON from 'ol/format/GeoJSON.js';
 import WKT from 'ol/format/WKT';
 import {HttpClient} from '@angular/common/http';
-import {UserService} from "../../../services/user.service";
+import {UserService} from '../../../services/user.service';
 
 @Component({
   selector: 'app-select-notif-zone',
@@ -42,7 +42,6 @@ export class SelectNotifZoneComponent implements OnInit {
   }
 
   onSelectionEnd(canceled: boolean) {
-
     if(!canceled) {
       var notifZoneJson = {
         name: 'Notification zone',

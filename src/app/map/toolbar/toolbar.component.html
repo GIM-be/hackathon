@@ -10,19 +10,39 @@
 
   <div class="container">
     <ul class="nav nav-pills list-inline">
-      <li class="nav-item" (click)="activateInteraction('drawPoint')">
+      <li class="nav-item" (click)="activateInteraction('drawPoint')"
+          ngbTooltip="D&eacute;poser un point" placement="right" [openDelay]="200" [closeDelay]="200" tooltipClass="action-tooltip">
         <a class="interaction-item nav-link" [ngClass]="{'active': isInteractionActive('drawPoint')}"><i class="d-block fas fa-map-marker-alt"></i></a>
       </li>
-      <li class="nav-item" (click)="activateInteraction('selectRoad')">
-        <a class="interaction-item nav-link" [ngClass]="{'active': isInteractionActive('selectRoad')}"><i class="d-block fas fa-route"></i></a>
+      <li class="nav-item" (click)="activateInteraction('selectRoad'); isInteractionActive('selectRoad')? p1.open() : p1.close()"
+          ngbTooltip="Tracer une ligne" placement="right" [openDelay]="200" [closeDelay]="200" tooltipClass="action-tooltip">
+        <a class="interaction-item nav-link" [ngClass]="{'active': isInteractionActive('selectRoad')}">
+          <i class="d-block fas fa-route"></i></a>
       </li>
-      <li class="nav-item" (click)="activateInteraction('drawPolygon')">
+      <li style="visibility: hidden"
+          [ngbPopover]="askConfirmationDrawLine" placement="right" [autoClose]="false" triggers="manual" #p1="ngbPopover" popoverClass="shift-popover-left">
+      </li>
+      <li class="nav-item" (click)="activateInteraction('drawPolygon')"
+          ngbTooltip="Tracer un polygone" placement="right" [openDelay]="200" [closeDelay]="200" tooltipClass="action-tooltip">
         <a class="interaction-item nav-link" [ngClass]="{'active': isInteractionActive('drawPolygon')}"><i class="d-block fas fa-draw-polygon"></i></a>
       </li>
-      <li class="nav-item">
-        <a class="interaction-item nav-link" [ngClass]="{'active': false}"><i class="d-block far fa-bell"></i></a>
+    </ul>
+
+    <!-- user logged in logged in -->
+    <app-select-notif-zone></app-select-notif-zone>
+  </div>
+
+  <ng-template #askConfirmationDrawLine>
+    <ul class="nav nav-pills list-inline">
+      <li class="nav-item" (click)="confirmInteractionAction()"
+          ngbTooltip="Terminer l'action" placement="right" [openDelay]="200" [closeDelay]="200" container="body" tooltipClass="action-tooltip">
+        <a class="interaction-item pop nav-link"><i class="d-block fa fa-check"></i></a>
+      </li>
+      <li class="nav-item" (click)="cancelInteractionAction(); p1.close()"
+          ngbTooltip="Annuler l'action" placement="right" [openDelay]="200" [closeDelay]="200" container="body" tooltipClass="action-tooltip">
+        <a class="interaction-item pop nav-link"><i class="d-block fa fa-times"></i></a>
       </li>
     </ul>
-  </div>
+  </ng-template>
 
 </div>

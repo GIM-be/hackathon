@@ -1,10 +1,22 @@
-<div class="notif-zone-select" *ngIf="userService.getLogged()">
-  <div *ngIf="!isSelecting">
-    <a class="btn btn-lg mx-1 btn-outline-primary text-dark" (click)="onSelectionStart()">Notification Zone</a>
-  </div>
-  <div *ngIf="isSelecting" class="selection-zone-btn">
-    <a class="btn btn-lg mx-1 btn-outline-primary text-dark" (click)="onSelectionEnd(false)">Confirm</a>
-      <a class="btn btn-lg mx-1 btn-outline-primary text-dark" (click)="onSelectionEnd(true)">Cancel</a>
-  </div>
-</div>
+<ul class="nav nav-pills list-inline" *ngIf="userService.getLogged()">
+  <li class="nav-item" (click)="onSelectionStart(); p2.open()"
+    ngbTooltip="Mes alertes" placement="right" [openDelay]="200" [closeDelay]="200" tooltipClass="action-tooltip">
+  <a class="interaction-item nav-link" [ngClass]="{'active': false}"><i class="d-block far fa-bell"></i></a>
+  </li>
+  <li style="visibility: hidden"
+      [ngbPopover]="askConfirmationMyAlerts" placement="right" [autoClose]="false" triggers="manual" #p2="ngbPopover" popoverClass="shift-popover-left">
+  </li>
+</ul>
 
+<ng-template #askConfirmationMyAlerts>
+  <ul class="nav nav-pills list-inline">
+    <li class="nav-item" (click)="onSelectionEnd(false)"
+        ngbTooltip="Terminer l'action" placement="right" [openDelay]="200" [closeDelay]="200" container="body" tooltipClass="action-tooltip">
+      <a class="interaction-item pop nav-link"><i class="d-block fa fa-check"></i></a>
+    </li>
+    <li class="nav-item" (click)="onSelectionEnd(true); p2.close()"
+        ngbTooltip="Annuler l'action" placement="right" [openDelay]="200" [closeDelay]="200" container="body" tooltipClass="action-tooltip">
+      <a class="interaction-item pop nav-link"><i class="d-block fa fa-times"></i></a>
+    </li>
+  </ul>
+</ng-template>

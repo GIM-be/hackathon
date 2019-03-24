@@ -102,7 +102,6 @@ export class LayerService {
     });
   }
 
-
   createWMSLayer(layer: Layer): Image {
     return new Image(
       {

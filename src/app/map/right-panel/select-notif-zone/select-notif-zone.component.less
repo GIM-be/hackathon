@@ -1,4 +1,34 @@
-.notif-zone-select {
-  margin-top: 10px;
-  margin-bottom: 10px;
+@import '../../../../css/constants';
+@import '../../../../css/xbrowser';
+
+li {
+  margin: 5px 0;
+  cursor: pointer;
+
+  a.user-profile {
+    font-size: 46px;
+    color: @theme-color-light;
+    margin-bottom: 20px;
+  }
+
+  a.interaction-item {
+    background-color: rgba(0,0,0,0.25);
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    padding: 17px 12px;
+    border-radius: 5px;
+
+    &.pop {
+      background-color: @theme-color-dark;
+      color: @theme-color-light;
+    }
+
+    i {
+      .scale(1.3);
+      &:hover {
+        .scale(1.5);
+      }
+    }
+  }
 }
